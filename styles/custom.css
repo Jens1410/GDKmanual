@@ -1,0 +1,101 @@
+
+
+.toggle-button {
+  padding: 8px 16px;
+  background: var(--md-primary-fg-color);
+  color: white;
+  border: 1px solid var(--md-primary-fg-color);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.toggle-button:hover {
+  background: transparent !important;
+  color: var(--md-primary-fg-color) !important;
+  border: 1px solid var(--md-primary-fg-color);
+}
+
+.toggle-button.active-button {
+  background: transparent !important;
+  color: var(--md-primary-fg-color) !important;
+  border: 1px solid var(--md-primary-fg-color);
+}
+
+.toggle-container {
+  margin-top: 16px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  color: var(--md-default-fg-color-on);
+}
+
+.tg {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #009485 !important;
+  }
+
+.tg td {
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+
+.tg th {
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 10px 5px;
+  word-break: normal;
+}
+.tg .tg-u9tq {
+  border-color: #009485;
+  text-align: left;
+  vertical-align: top
+}
+.tg .tg-b2xu {
+  background-color: #009485;
+  border-color: #ffffff;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: left;
+  vertical-align: top
+}
+
+details {
+  border: 1px solid #009485 !important;
+  border-radius: 6px;
+  margin: 16px 0;
+  background-color: #ffffff !important;
+  padding: 0;
+}
+
+/* Header / Summary */
+summary {
+  background-color: #E5F8F6 !important;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px 14px;
+  border-radius: 6px 6px 0 0;
+  list-style: none;
+}
+
+/* Entfernt den Standard-Dreieck-Pfeil */
+summary::-webkit-details-marker {
+  color: #009485 !important;
+}
+
+/* Inhalt */
+details div {
+  padding-left: 10px;
+  margin-top: 8px;
+}
