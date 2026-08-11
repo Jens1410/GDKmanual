@@ -778,8 +778,6 @@ Struktureinheit in der Organisation, welche Ressourcen verbraucht (z. B. Kirchge
   <p>Bist du mit den Eingaben fertig, klicke auf <strong>[Speichern]</strong>. <br><i>Das Objekt erscheint in der Liste auf dieser Seite.</i></p>
   <hr>
   <h3>Parameterbeschreibung</h3>
-
-</details>
   <details>
     <summary>Objektname</summary>
     <p>Bezeichnung des Objekts; (Name des Gebäudes, der Liegenschaft oder der Organisationseinheit)</p>
@@ -826,11 +824,50 @@ Struktureinheit in der Organisation, welche Ressourcen verbraucht (z. B. Kirchge
   <p>Um die Daten für ein Objekt nachträglich zu ändern, klickst du auf das Symbol <img src="../../../assets/images/symbol_edit.png">. <br><i>Es erscheint der Dialog: <strong>Daten editieren</strong></i></p>
   <hr>
   <h3>Parameterbeschreibung</h3>
+  <details>
+    <summary>Objektname</summary>
+    <p>Bezeichnung des Objekts; (Name des Gebäudes, der Liegenschaft oder der Organisationseinheit)</p>
+  </details>
+  <details>
+    <summary>Objektcode</summary>
+    <p>Interne Nummer für den Datenexport, aufgebaut nach folgendem Schlüssel:<br>
+    <strong>&lt;Nummer Kirchenbezirk&gt; - &lt;Nummer Rechtsträger&gt; - &lt;Codeziffer für Gebeäudetyp&gt; - &lt;lfd. Nummer&gt;</strong></p>
+    <p><strong>Codeziffer für den Gebäudetyp</strong ><br>01 Kirche; 02 Gemeindehaus; 03 Kindergarten; 04 Verwaltung; 05 Gemeindezentrum; 06 Wohnhaus; 07 Gästehaus; 08 Schule; 09 Werkstatt; 10 Tagesstätte/-einrichtung; 11 Stationäre Einrichtung; 12 Krankenhaus; 13 Außenanlage; 14 sonstiges; 15 Kapelle; 16 Pfarrhaus; 36 Gewerbe; 37 KiTa (Betriebsträgerschaft); 38 Friedhof; 39 Friedhof (Betriebsträgerschaft)</p>
+  </details>
+  <details>
+    <summary>Nutzungsart</summary>
+    <p>Auswahl über die Nutzungsart des Objekts.</p>
+    <p><strong>Für ein Objekt der organisatorischen Struktur: "sonstiges" </strong></p>
+  </details>
+  <details>
+    <summary>PLZ / Ort / Straße</summary>
+    <p>Position des Objekts als postalische Adresse</p>
+  </details>
+  <details>
+    <summary>LatLon</summary>
+    <p>Geografische Koordinaten des Objekts (Latitude, Longitude)</p>
+  </details>
+  <details>
+    <summary>Baujahr</summary>
+    <p>Jahr der Ersterrichtung des Objekts (Baujahr)</p>
+  </details>
+  <details>
+    <summary>Nutzfläche</summary>
+    <p>Größe der für den Verbrauch maßgeblichen Fläche (gesamte beheizte Fläche im Gebäude)</p>
+  </details>
+  <details>
+    <summary>Denkmal</summary>
+    <p>Steht das betrachtete Objekt unter Denkmalschutz? Die Bewertung hat Einfluss auf die Frage, ob z. B bestimmte Maßnahmen möglich sind.</p>
+  </details>
+  <details>
+    <summary>Anmerkung</summary>
+    <p>Raum für Anmerkungen</p>
+  </details>
 </div>
 
 <div id="bild-container" class="toggle-container" style="display: none;">
   <div style="margin: 16px 0; text-align: center;"><img src="../../../assets/images/object_add_image.png"></div>
-  <p>Um dem dem Objekt ein Foto zuzuordnen, klickst du auf das Symbol <img src="../../../assets/images/symbol_add_image.png">.</p>
+  <p>Um dem dem Objekt ein Foto zuzuordnen, klickst du auf das Symbol <img src="../../../assets/images/symbol_add_image.png">. <br><i>Es erscheint der Dialog: <strong>Objektbild hochladen</strong></i> </p>
 </div>
 
 <!-- JavaScript-Funktion zum Toggle -->
