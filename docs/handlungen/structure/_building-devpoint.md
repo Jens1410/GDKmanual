@@ -1,7 +1,7 @@
 
 !!! tip "{{ hint_under_construction }}"
 ---
-<!-- Buttons für alle Termini -->
+<!-- Buttons für alle Termini 
 <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
   <button onclick="toggleContainer('strom-container', 'strom-button')" class="toggle-button" id="strom-button">{{ strom }}</button>
   <button onclick="toggleContainer('waerme-container', 'waerme-button')" class="toggle-button" id="waerme-button">{{ waerme }}</button>
@@ -17,7 +17,7 @@
   <button onclick="toggleContainer('buerobedarf-container', 'buerobedarf-button')" class="toggle-button" id="buerobedarf-button">{{ buerobedarf }}</button>
   <button onclick="toggleContainer('haushaltsbedarf-container', 'haushaltsbedarf-button')" class="toggle-button" id="haushaltsbedarf-button">{{ haushaltsbedarf }}</button>
 </div>
-
+-->
 <!-- Container für alle Termini (standardmäßig ausgeblendet) -->
 <div id="strom-container" class="toggle-container" style="display: none;">
   <h3>{{ strom }}</h3>
