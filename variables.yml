@@ -79,6 +79,7 @@ new_object: "neues Objekt"
 
 #dialog header snippets
 dialog_header_editdata: "Daten editieren"
+dialog_header_addimmage: "Objektbild hochladen"
 
 #dialog object data
 object_name: "Objektname"
