@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 142" width="100%">
+  <a href="/handlungen/gemeinde/_building/" target="_top">
+    <rect x="0" y="0" width="610" height="140" fill="#f2f2f2" stroke="#666666" />
+    <text x="18" y="25" font-family="Helvetica" font-size="12" fill="#7c7c7c">
+      <tspan x="18" dy="0">Objekt: Pfarrhaus</tspan>
+    </text>
+  </a>
+  <a href="/handlungen/gemeinde/_building-devpoint-water/" target="_top">
+    <rect x="410" y="40" width="190" height="100" fill="#e6e6e6" stroke="#999999" />
+    <text x="423" y="65" font-family="Helvetica" font-size="12" fill="#7c7c7c">
+      <tspan x="423" dy="-10">Wasser-Verbrauch</tspan>
+      <tspan x="423" dy="15">Lieferstelle</tspan>
+    </text>
+  </a>
+  <a href="/handlungen/gemeinde/_building-devpoint-current/" target="_top">
+    <rect x="10" y="40" width="190" height="100" fill="#e6e6e6" stroke="#999999" />
+    <text x="23" y="65" font-family="Helvetica" font-size="12" fill="#7c7c7c">
+      <tspan x="23" dy="-10">Strom-Verbrauch</tspan>
+      <tspan x="23" dy="15">Lieferstelle</tspan>
+    </text>
+  </a>
+  <a href="/handlungen/gemeinde/_building-devpoint-heat/" target="_top">
+    <rect x="210" y="40" width="190" height="100" fill="#e6e6e6" stroke="#999999" />
+    <text x="223" y="65" font-family="Helvetica" font-size="12" fill="#7c7c7c">
+      <tspan x="223" dy="-10">Wärmeenergie-Verbrauch</tspan>
+      <tspan x="223" dy="15">Lieferstelle</tspan>
+    </text>
+  </a>
+  <a href="/handlungen/gemeinde/_building-meter-current/" target="_top">
+    <rect x="20" y="90" width="170" height="50" fill="#cccccc" stroke="#999999" />
+    <text x="33" y="115" font-family="Helvetica" font-size="12" fill="#7c7c7c">
+      <tspan x="33" dy="-10">Strom-Verbrauch</tspan>
+      <tspan x="33" dy="15">Zähler</tspan>
+    </text>
+  </a>
+  <a href="/handlungen/gemeinde/_building-meter-heat/" target="_top">
+    <rect x="220" y="90" width="170" height="50" fill="#cccccc" stroke="#999999" />
+    <text x="233" y="115" font-family="Helvetica" font-size="12" fill="#7c7c7c">
+      <tspan x="233" dy="-10">Wärmeenergie-Verbrauch</tspan>
+      <tspan x="233" dy="15">Zähler</tspan>
+    </text>
+  </a>
+  <a href="/handlungen/gemeinde/_building-meter-water/" target="_top">
+    <rect x="420" y="90" width="170" height="50" fill="#a9c4eb" stroke="#6c8ebf" />
+    <text x="433" y="115" font-family="Helvetica" font-size="12" fill="#000000">
+      <tspan x="433" dy="-10">Wasser-Verbrauch</tspan>
+      <tspan x="433" dy="15">Zähler</tspan>
+    </text>
+  </a>
+</svg>
+

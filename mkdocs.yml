@@ -1,0 +1,87 @@
+site_name: Das Grüne Datenkonto
+site_description: Dokumentation zur Bedienung des Grünen Datenkontos
+site_author: Jens Ackermann
+docs_dir: DOCS
+
+theme:
+  name: material
+  logo: assets/images/logo2.svg
+  favicon: assets/images/favicon.svg
+  language: de
+  palette:
+  # Heller Modus
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    primary: teal
+    accent: teal
+    toggle:
+      icon: material/weather-night
+      name: Zu dunklem Modus wechseln
+    # Dunkler Modus
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    primary: teal
+    accent: teal
+    toggle:
+      icon: material/weather-sunny
+      name: Zu hellem Modus wechseln
+  features:
+    - navigation.instant      # Schnelleres Laden
+    - navigation.tracking     # URL folgt der Position
+    - navigation.tabs         # Hauptkapitel als Reiter
+    - navigation.tabs.sticky
+  #  - navigation.sections     # Gruppen in der Seitenleiste
+    - navigation.top          # "Nach oben"-Schaltfläche
+    - search.suggest          # Suchvorschläge
+    - search.highlight        # Treffer hervorheben
+    - content.code.copy       # Code kopieren
+    - content.tabs.link         # Tabs verlinken
+    - toc.follow                # Inhaltsverzeichnis folgt der Position  
+
+markdown_extensions: 
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true  
+  - meta
+
+plugins:
+  - search:
+      lang: de
+  - macros:
+      include_yaml:
+        - variables.yml
+
+
+extra_css:
+  - styles/custom.css
+
+nav:
+  - Startseite: index.md
+  - Handlungen: 
+      - Vorbereitung: handlungen/vorbereitung.md
+      - Zugang und Anmeldung: handlungen/anmeldung.md
+      - Strukturen abbilden: 
+          - Einführung: handlungen/structure/index.md
+#          - Strukturerfassung: handlungen/structure/strukturerfassung.md
+          - Objekt: handlungen/structure/_building.md
+          - Lieferstelle: handlungen/structure/_building-devpoint.md          
+          - Zähler: handlungen/structure/_building-meter.md
+      - Daten erfassen: handlungen/collect_data/index.md
+      - Auswertungen: handlungen/evaluation/index.md
+
+  - Benutzeroberfläche: menuestruktur/index.md

@@ -1,0 +1,107 @@
+#strucural
+struct_head_parameters: "Parameterbeschreibung"
+hint_under_construction: "Hier wird noch gearbeitet."
+
+# ressources
+strom: "Strom-Verbrauch"
+waerme: "Wärmeenergie-Verbrauch"
+wasser: "Wasser-Verbrauch"
+regstrom_ertrag: "Regenerativstrom-Ertrag"
+regwaerme_ertrag: "Regenerativwärme-Ertrag"
+verkehr: "Verkehrsmenge"
+papier: "Papierverbrauch"
+abfall: "Abfall-Entsorgung"
+klima_komp: "Klima-Kompensation"
+flaechen: "Flächen"
+lebensmittel: "Lebensmittel"
+buerobedarf: "Bürobedarf"
+haushaltsbedarf: "Haushaltsbedarf"
+
+# steps_level1
+page_open: "Seite öffnen"
+function_call: "Funktion aufrufen"
+data_input: "Daten eingeben"
+data_edit: "Daten bearbeiten"
+optional: "Optional: "
+image_add: "Bild hinzufügen"
+
+# structureTerms
+term_object: "Objekt"
+term_devpoint: "Lieferstelle"
+term_meter: "Zähler"
+term_submeter: "Unterzähler"
+
+#definitions
+def_object: "Einheit, in welcher ein Ressourcenverbrauch entsteht."
+def_object_tech: "Jedes Gebäude mit Ressourcenverbrauch (z. B. Kirche, Gemeindehaus, Kindergarten)"
+def_object_org: "Struktureinheit in der Organisation, welche Ressourcen verbraucht (z. B. Kirchgemeinde, Verwaltung, Fuhrpark)"
+
+#menu items
+men_head_structure: "Strukturdaten"
+men_item_contact: "Kontakte, Funktionen"
+men_item_structure: "Strukturen/Gebäude"
+men_item_objectprofiles: "Gebäude-/Objekt-Profile"
+men_item_devpoints: "Lieferstellen"
+men_item_objectclimateprofile: "Klimasteckbrief"
+men-item_milestones: "Meilensteine"
+
+men_head_env_management: "Umweltmanagement"
+men_item_invoices: "Rechnungsdaten"
+men_item_bilancediagrams: "Bilanz-Diagramme"
+men_item_usage: "Nutzungen"
+men_item_statisticreferencedata: "Statistik-Bezugsdaten"
+men_item_benchmarktables: "Kennzahlen-Tabelle"
+men_item_benchmarkreport: "Kennzahlen-Report"
+men_item_greendocuments: "Grüne Dokumente"
+men_item_actions: "Prozesse, Maßnahmen"
+
+men_head_energymonitoring: "Energiemonitoring"
+men_item_meters: "Zähler, Zuordnungen"
+men_item_meterdata: "Eingabe/Ergebnischeck"
+men_item_energyreport: "Energie-Bericht"
+men_item_export: "Datenexport"
+
+men_head_results: "Ergebnis-Diagramme"
+men_item_results_meter: "Zähler/Datenquellen"
+men_item_results_object: "Gebäude/Objekte"
+men_item_results_benchmarks: "Kennzahlen"
+men_item_results_co2: "CO2 Emissionen"
+
+#action snippets
+action_openpage: "Öffne die Seite: "
+action_callfunction: "Klicke auf: "
+
+#result snippets
+result_dialog_appears: "Es erscheint der Dialog: "
+
+#function snippets
+new_object: "neues Objekt"
+
+#dialog header snippets
+dialog_header_editdata: "Daten editieren"
+
+#dialog object data
+object_name: "Objektname"
+object_code: "Objektcode"
+object_type: "Nutzungsart"
+object_plz: "PLZ"
+object_city: "Ort"
+object_street: "Straße"
+object_coordinates: "LatLon"
+object_built: "Baujahr"
+object_area: "Nutzfläche"
+object_historic: "Denkmal"
+object_annotation: "Anmerkung"
+
+object_name_definition: "Bezeichnung des Objekts; (Name des Gebäudes, der Liegenschaft oder der Organisationseinheit)"
+object_code_definition: "Interne Nummer für den Datenexport, aufgebaut nach folgendem Schlüssel:" 
+object_code_key: "&lt;Nummer Kirchenbezirk&gt; - &lt;Nummer Rechtsträger&gt; - &lt;Codeziffer für Gebeäudetyp&gt; - &lt;lfd. Nummer&gt;"
+object_type_definition: "Auswahl über die Nutzungsart des Objekts."
+object_plz_definition: "Position des Objekts als postalische Adresse"
+object_city_definition: "Position des Objekts als postalische Adresse"
+object_street_definition: "Position des Objekts als postalische Adresse"
+object_coordinates_definition: "Geografische Koordinaten des Objekts (Latitude, Longitude)"
+object_built_definition: "Jahr der Ersterrichtung des Objekts (Baujahr)"
+object_area_definition: "Größe der für den Verbrauch maßgeblichen Fläche (gesamte beheizte Fläche im Gebäude)"
+object_historic_definition: "Steht das betrachtete Objekt unter Denkmalschutz? Die Bewertung hat Einfluss auf die Frage, ob z. B bestimmte Maßnahmen möglich sind."
+object_annotation_definition: "Raum für Anmerkungen"
