@@ -99,3 +99,18 @@ details div {
   padding-left: 10px;
   margin-top: 8px;
 }
+
+/* TIP-Admonition im Dark-Mode lesbar machen */
+[data-md-color-scheme="slate"] .md-typeset .admonition.tip,
+[data-md-color-scheme="slate"] .md-typeset details.tip {
+  background-color: #003c3c !important;   /* dunkles Petrol */
+  border-color: #00b3b3 !important;       /* kräftiges Türkis */
+  color: #e0f7f7 !important;              /* sehr helles Türkis */
+}
+
+/* Header (Titel) der TIP-Admonition */
+[data-md-color-scheme="slate"] .md-typeset .admonition.tip > .admonition-title,
+[data-md-color-scheme="slate"] .md-typeset details.tip > summary {
+  background-color: #005f5f !important;   /* etwas helleres Petrol */
+  color: #e0f7f7 !important;
+}
