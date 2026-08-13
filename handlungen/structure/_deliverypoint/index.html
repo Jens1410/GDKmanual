@@ -13,6 +13,10 @@
       
       
       
+        <link rel="prev" href="../_object/">
+      
+      
+        <link rel="next" href="../_meter/">
       
       
         
@@ -23,7 +27,7 @@
     
     
       
-        <title>Strukturen erfassen - Das Grüne Datenkonto</title>
+        <title>Lieferstelle - Das Grüne Datenkonto</title>
       
     
     
@@ -75,11 +79,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#strukturen-erfassen" class="md-skip">
-          Zum Inhalt
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -111,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Strukturen erfassen
+              Lieferstelle
             
           </span>
         </div>
@@ -223,10 +222,12 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
+      <li class="md-tabs__item md-tabs__item--active">
         <a href="../../vorbereitung/" class="md-tabs__link">
           
   
@@ -327,24 +328,29 @@
       
   
   
+    
   
   
+  
     
     
     
     
-      
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
             
   
   
@@ -362,7 +368,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             
@@ -433,6 +439,8 @@
                 
   
   
+    
+  
   
   
     
@@ -443,11 +451,11 @@
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
         
           
           <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
@@ -468,7 +476,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_2_3">
             <span class="md-nav__icon md-icon"></span>
             
@@ -514,7 +522,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../_building/" class="md-nav__link">
+      <a href="../_object/" class="md-nav__link">
         
   
   
@@ -539,10 +547,17 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../_building-devpoint/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -558,6 +573,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -570,7 +586,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../_building-meter/" class="md-nav__link">
+      <a href="../_meter/" class="md-nav__link">
         
   
   
@@ -706,27 +722,6 @@
   
   
   
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Inhaltsverzeichnis
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#gebaude-als-objekt" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Gebäude als Objekt
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -743,26 +738,76 @@
 
 
 
-<h1 id="strukturen-erfassen">Strukturen erfassen<a class="headerlink" href="#strukturen-erfassen" title="Permanent link">&para;</a></h1>
-<h2 id="gebaude-als-objekt">Gebäude als Objekt<a class="headerlink" href="#gebaude-als-objekt" title="Permanent link">&para;</a></h2>
-<object type="image/svg+xml" data="/assets/images/_building.svg" width="100%"></object>
+  <h1>Lieferstelle</h1>
 
-<!-- Buttons für alle Termini -->
-<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
-  <button onclick="toggleContainer('strom-container', 'strom-button')" class="toggle-button" id="strom-button">Strom-Verbrauch</button>
-  <button onclick="toggleContainer('waerme-container', 'waerme-button')" class="toggle-button" id="waerme-button">Wärmeenergie-Verbrauch</button>
-  <button onclick="toggleContainer('wasser-container', 'wasser-button')" class="toggle-button" id="wasser-button">Wasser-Verbrauch</button>
-  <button onclick="toggleContainer('regstrom_ertrag-container', 'regstrom_ertrag-button')" class="toggle-button" id="regstrom_ertrag-button">Regenerativstrom-Ertrag</button>
-  <button onclick="toggleContainer('regwaerme_ertrag-container', 'regwaerme_ertrag-button')" class="toggle-button" id="regwaerme_ertrag-button">Regenerativwärme-Ertrag</button>
-  <button onclick="toggleContainer('verkehr-container', 'verkehr-button')" class="toggle-button" id="verkehr-button">Verkehrsmenge</button>
-  <button onclick="toggleContainer('papier-container', 'papier-button')" class="toggle-button" id="papier-button">Papierverbrauch</button>
-  <button onclick="toggleContainer('abfall-container', 'abfall-button')" class="toggle-button" id="abfall-button">Abfall-Entsorgung</button>
-  <button onclick="toggleContainer('klima_komp-container', 'klima_komp-button')" class="toggle-button" id="klima_komp-button">Klima-Kompensation</button>
-  <button onclick="toggleContainer('flaechen-container', 'flaechen-button')" class="toggle-button" id="flaechen-button">Flächen</button>
-  <button onclick="toggleContainer('lebensmittel-container', 'lebensmittel-button')" class="toggle-button" id="lebensmittel-button">Lebensmittel</button>
-  <button onclick="toggleContainer('buerobedarf-container', 'buerobedarf-button')" class="toggle-button" id="buerobedarf-button">Bürobedarf</button>
-  <button onclick="toggleContainer('haushaltsbedarf-container', 'haushaltsbedarf-button')" class="toggle-button" id="haushaltsbedarf-button">Haushaltsbedarf</button>
+<div class="admonition tip">
+<p class="admonition-title">Lieferstelle: Übergabepunkt für eine Ressource an den Verbraucher.</p>
+<p><strong>Lieferstelle der technischen Infrastruktur</strong><br />
+Hausanschlüsse für Strom, Wasser, Gas oder der Tankstutzen für Heizöl  </p>
+<p><strong>Lieferstelle der organisatorischen Struktur</strong><br />
+Fahrzeuge für Dienstfahrten, der gemeindeeigene Kopierer oder die Druckerei, welche den Gemeindebrief druckt  </p>
 </div>
+<!-- Buttons für die 4 Optionen -->
+<div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
+  <button onclick="toggleContainer('container-1', 'button1')" class="toggle-button" id="button-1">1. Funktion aufrufen</button>
+  <button onclick="toggleContainer('container-2', 'button-2')" class="toggle-button" id="button-2">2. Daten eingeben</button>
+  <button onclick="toggleContainer('container-3', 'button-3')" class="toggle-button" id="button-3">3. Objektanteile definieren</button>
+  <button onclick="toggleContainer('container-4', 'button-4')" class="toggle-button" id="button-4">Optional: Daten bearbeiten</button>
+</div>
+
+<!-- Container für die Inhalte (nur der erste ist sichtbar) -->
+<div id="container-1" class="toggle-container" style="display: none;">
+    <div style="margin: 16px 0; text-align: center;"><img src="../../../assets/images/deliverypoint_function_call.png"></div>
+    <ol>
+      <li>Öffne die Seite: <strong>Lieferstellen</strong></li>
+      <li>Wähle den Verbrauchssektor. <br>
+      Für elektrische Heizungsanlagen mit eigener Zähleinrichtung wähle die Ressource <strong>Wärmeenergie-Verbrauch</strong>. </li>
+      <li>Klicke auf: <strong>neue Lieferstelle</strong> | <i>Es erscheint der Dialog: <strong>Daten editieren</strong></i></li>
+    </ol>      
+</div>
+
+<div id="container-2" class="toggle-container" style="display: none;">
+  <div style="margin: 16px 0; text-align: center;"><img src="../../../assets/images/deliverypoint_data-input.png"></div>
+    <p>Alle gelb hinterlegten Felder sind Pflichtfelder und müssen ausgefüllt werden, die Daten in den anderen Felder kannst du später ergänzen. </p> 
+    <p>Bist du mit den Eingaben fertig, klicke auf <strong>[Speichern]</strong>. <br><i>Die neue Lieferstelle erscheint in der Liste auf dieser Seite.</i></p>
+    <hr>
+    <h3>Parameterbeschreibung</h3>
+
+    <details>
+      <summary>Lieferstelle</summary>
+      <p>Eindeutige für dich erkennbare Bezeichnung der Lieferstelle</p>
+    </details>
+    <details>
+    <summary>Marktlokation - Ausschließlich relevant für Strom- und Gaslieferstellen</summary>
+    <p>Eindeutige, bundesweite Kennung für Marktlokationen im deutschen Strom- und Gasmarkt. Sie dient der Identifikation von physischen oder virtuellen Punkten, an denen Energie gemessen, bilanziell erfasst oder gehandelt wird. Du findest die MaLo-ID in der Regel auf deiner Strom- oder Gasrechnung.<br>    
+    </details>
+    <details>
+    <summary>Adresse</summary>
+    <p>Position der Lieferstelle als postalische Adresse</p>    
+    </details>
+    <details>
+    <summary>Ressource</summary>
+    <p>Auswahl über die materielle Ressource, welche an der Lieferstelle übergeben wird. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf)</p>
+    </details>
+
+
+  <!-- Buttons für alle Termini
+  <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
+    <button onclick="toggleContainer('strom-container', 'strom-button')" class="toggle-button" id="strom-button">Strom-Verbrauch</button>
+    <button onclick="toggleContainer('waerme-container', 'waerme-button')" class="toggle-button" id="waerme-button">Wärmeenergie-Verbrauch</button>
+    <button onclick="toggleContainer('wasser-container', 'wasser-button')" class="toggle-button" id="wasser-button">Wasser-Verbrauch</button>
+    <button onclick="toggleContainer('regstrom_ertrag-container', 'regstrom_ertrag-button')" class="toggle-button" id="regstrom_ertrag-button">Regenerativstrom-Ertrag</button>
+    <button onclick="toggleContainer('regwaerme_ertrag-container', 'regwaerme_ertrag-button')" class="toggle-button" id="regwaerme_ertrag-button">Regenerativwärme-Ertrag</button>
+    <button onclick="toggleContainer('verkehr-container', 'verkehr-button')" class="toggle-button" id="verkehr-button">Verkehrsmenge</button>
+    <button onclick="toggleContainer('papier-container', 'papier-button')" class="toggle-button" id="papier-button">Papierverbrauch</button>
+    <button onclick="toggleContainer('abfall-container', 'abfall-button')" class="toggle-button" id="abfall-button">Abfall-Entsorgung</button>
+    <button onclick="toggleContainer('klima_komp-container', 'klima_komp-button')" class="toggle-button" id="klima_komp-button">Klima-Kompensation</button>
+    <button onclick="toggleContainer('flaechen-container', 'flaechen-button')" class="toggle-button" id="flaechen-button">Flächen</button>
+    <button onclick="toggleContainer('lebensmittel-container', 'lebensmittel-button')" class="toggle-button" id="lebensmittel-button">Lebensmittel</button>
+    <button onclick="toggleContainer('buerobedarf-container', 'buerobedarf-button')" class="toggle-button" id="buerobedarf-button">Bürobedarf</button>
+    <button onclick="toggleContainer('haushaltsbedarf-container', 'haushaltsbedarf-button')" class="toggle-button" id="haushaltsbedarf-button">Haushaltsbedarf</button>
+  </div>
+  -->
 
 <!-- Container für alle Termini (standardmäßig ausgeblendet) -->
 <div id="strom-container" class="toggle-container" style="display: none;">
@@ -829,6 +874,31 @@
   <h3>Haushaltsbedarf</h3>
   <p>Hier steht der Inhalt für Haushaltsbedarf.</p>
 </div>
+</div>
+
+<div id="container-3" class="toggle-container" style="display: none;">
+  <div style="margin: 16px 0; text-align: center;"><img src="../../../assets/images/deliverypoint_assign_object.png"></div>
+  <p>Nun teilst du der Lieferstelle mit, welche Objekte sie versorgt und wie hoch der Anteil des jeweiligen Objekts am Verbrauch über diese Lieferstelle ist.  
+  Eine Lieferstelle kann mehrere Objekte versorgen. Jede Lieferstelle muss mindestens ein Objekt versorgen (ansonsten wäre die Lieferstelle sinnlos). </p>
+  <p>So ordnest du der Lieferstelle ein Objekt zu:</p>
+  <ol>
+    <li>Im Datensatz der Lieferstelle: Klicke auf: <img src="../../../assets/images/symbol_edit.png"> <strong>neue Zuordnung</strong>. <br><i>Es erscheint der Dialog: <strong>Daten editieren</strong></i></li>
+    <li>Wähle das zu versorgende Objekt: <strong>Objektzuordnung.</strong><br><i>Die Auswahl zeigt alle deine zuvor definierten Objekte. Durch Mausklick ordnest du das gewählte Objekt der Lieferstelle zu.</i></li>
+    <li> Definiere den Anteil der Ressource den das Objekt aus der Lieferstelle bezieht. Gib den Wert als Faktor an (0 ... 1). <br><strong>An dieser Stelle berücksichtigst du den Anteil fremdgenutzter (vermieteter Gebäudeteile).</strong></li> 
+    <li>Klicke auf <strong>[Speichern]</strong>. <br><i>Das gewählte Objekt ist mit der Lieferstelle verbunden.</i></li>
+    <li>Versorgt die Lieferstelle weitere Objekte, wiederhole die Schritte 1 bis 4. Die Summe der Zuordnungsanteile darf nicht größer als 1 sein.</li>
+  </ol>     
+</div>
+
+<div id="container-4" class="toggle-container" style="display: none;">
+  <div style="margin: 16px 0; text-align: center;"><img src="../../../assets/images/deliverypoint_edit.png"></div>
+  <p>Mit diesen Möglichkeiten kannst du die Lieferstelle nachträglich bearbeiten:</p>
+  <ol>
+    <li>Benennung und Daten der Lieferstelle ändern.</li>
+    <li>Die Zuordnung zum Objekt ändern (z. B. Wert des Zuordnungsanteils), ein anderes Objekt zuordnen oder die Zuordnung löschen.</li>
+    <li>Der Lieferstelle ein weiteres Objekt zuordnen.
+  </ol>
+</div>
 
 <!-- JavaScript-Funktion zum Toggle -->
 <script>
@@ -856,39 +926,6 @@ function toggleContainer(containerId, buttonId) {
   }
 }
 </script>
-
-<!-- CSS für die Buttons und Container (Dark Mode-kompatibel) -->
-<style>
-.toggle-button {
-  padding: 8px 16px;
-  background: var(--md-primary-fg-color);
-  color: white; /* Weiße Textfarbe für inaktive Buttons */
-  border: 1px solid var(--md-primary-fg-color);
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background 0.2s, color 0.2s;
-}
-
-.toggle-button:hover {
-  background: var(--md-primary-fg-color-dark);
-}
-
-.toggle-button.active-button {
-  background: transparent !important; /* Transparenter Hintergrund für den aktiven Button */
-  color: var(--md-primary-fg-color) !important; /* Primärfarbe für den Text des aktiven Buttons */
-  border: 1px solid var(--md-primary-fg-color);
-}
-
-.toggle-container {
-  margin-top: 16px;
-  padding: 12px;
-  background: var(--md-default-fg-color--lighter);
-  border-radius: 4px;
-  color: var(--md-default-fg-color-on);
-  border: 1px solid var(--md-default-fg-color--lighter);
-}
-</style>
 
 
 
@@ -920,20 +957,26 @@ function toggleContainer(containerId, buttonId) {
       </main>
       
         <footer class="md-footer">
-  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
-  
-  
-    Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-      Material for MkDocs
-    </a>
-  
-</div>
-      
+        © 2026 Jens Ackermann
+      </div>
     </div>
+  </div>
+  <div class="md-footer-links">
+    <a href="/impressum/" class="footer-link">
+      <i class="fas fa-file-alt"></i> Impressum
+    </a>
+    <!--<a href="/datenschutz/" class="footer-link">
+      <i class="fas fa-lock"></i> Datenschutz
+    </a>
+    <a href="mailto:gdkmanual[at]email[dot]de" class="footer-link">
+      <i class="fas fa-envelope"></i> Kontakt
+    </a>
+    <a href="https://github.com/jens1410" target="_blank" rel="noopener" class="footer-link">
+      <i class="fab fa-github"></i> GitHub
+    </a> -->
   </div>
 </footer>
       
