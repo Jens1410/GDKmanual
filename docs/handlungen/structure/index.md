@@ -105,14 +105,14 @@ Jeder hat Vor- und Nachteile – wähle den, der am besten zu deiner Gemeinde un
 
 Hinsichtlich der Strukturen im Grünen Datenkonto triffst du auf dies Begriffe: 
 
-![Allgemeine Strukturen](../../assets/images/structures_general.svg)
+![Allgemeine Strukturen](../../assets/images/structures_general.png)
 
 ---
 
 **{{ term_object }}**  
 {{ def_object }}    
 
-**{{ term_devpoint }}**  
+**{{ term_deliverypoint }}**  
 Übergabepunkt für eine Ressource an den Verbraucher. Die Lieferstelle hat eine eigene Adresse und ist nicht an ein einzelnes Objekt gebunden.  
 In der Lieferstelle definierst du Zuordnungen: Welche Objekte beziehen welchen Anteil der Ressource aus der jeweiligen Lieferstelle? Falls deine Gemeinde nur einen anteiligen Verbrauch verursacht (z. B. 30% vom Gesamtverbrauch des Objektes "Pfarrhaus"), kannst du der Lieferstelle einen Faktor (z. B. 0,3) zuordnen.
 
@@ -133,7 +133,7 @@ Der Ressourcenverbrauch einer Kirchgemeinde beschränkt sich nicht allein auf de
     **{{ term_object }}**  
     {{ def_object_tech }}   
 
-    **{{ term_devpoint }}**  
+    **{{ term_deliverypoint }}**  
     Position an der die Ressource an den Verbraucher übergeht: z. B. die Hausanschlüsse für Strom, Wasser, Gas oder der Tankstutzen für das Heizöl.  
 
     **{{ term_meter }}**  
@@ -147,7 +147,7 @@ Der Ressourcenverbrauch einer Kirchgemeinde beschränkt sich nicht allein auf de
     - ggf. der **Fuhrpark** oder 
     - die **Verwaltung**. 
 
-    **{{ term_devpoint }}**  
+    **{{ term_deliverypoint }}**  
     Als Lieferstellen treten in Erscheinung:
     - **Fahrzeuge**
     - **Kopierer** 
@@ -166,4 +166,4 @@ Der Ressourcenverbrauch einer Kirchgemeinde beschränkt sich nicht allein auf de
 
 Im nächsten Schritt erkläre ich dir, wie du die Objekte anlegen kannst und worauf du achten solltest.
 
-**[Weiter zu: Objekte anlegen →](_building.md)**
+**[Weiter zu: Objekte anlegen →](_object.md)**

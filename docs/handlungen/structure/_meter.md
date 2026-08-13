@@ -1,10 +1,7 @@
-# Strukturen erfassen
 
-## Gebäude als Objekt
-
-<object type="image/svg+xml" data="/assets/images/_building.svg" width="100%"></object>
-
-<!-- Buttons für alle Termini -->
+!!! tip "{{ hint_under_construction }}"
+---
+<!-- Buttons für alle Termini 
 <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
   <button onclick="toggleContainer('strom-container', 'strom-button')" class="toggle-button" id="strom-button">{{ strom }}</button>
   <button onclick="toggleContainer('waerme-container', 'waerme-button')" class="toggle-button" id="waerme-button">{{ waerme }}</button>
@@ -20,7 +17,7 @@
   <button onclick="toggleContainer('buerobedarf-container', 'buerobedarf-button')" class="toggle-button" id="buerobedarf-button">{{ buerobedarf }}</button>
   <button onclick="toggleContainer('haushaltsbedarf-container', 'haushaltsbedarf-button')" class="toggle-button" id="haushaltsbedarf-button">{{ haushaltsbedarf }}</button>
 </div>
-
+-->
 <!-- Container für alle Termini (standardmäßig ausgeblendet) -->
 <div id="strom-container" class="toggle-container" style="display: none;">
   <h3>{{ strom }}</h3>
@@ -87,7 +84,7 @@
   <p>Hier steht der Inhalt für Haushaltsbedarf.</p>
 </div>
 
-<!-- JavaScript-Funktion zum Toggle -->
+<!-- JavaScript-Funktion zum Toggle 
 <script>
 function toggleContainer(containerId, buttonId) {
   // Alle Container ausblenden
@@ -113,13 +110,14 @@ function toggleContainer(containerId, buttonId) {
   }
 }
 </script>
+-->
 
 <!-- CSS für die Buttons und Container (Dark Mode-kompatibel) -->
 <style>
 .toggle-button {
   padding: 8px 16px;
   background: var(--md-primary-fg-color);
-  color: white; /* Weiße Textfarbe für inaktive Buttons */
+  color: white;
   border: 1px solid var(--md-primary-fg-color);
   border-radius: 4px;
   cursor: pointer;
@@ -128,12 +126,13 @@ function toggleContainer(containerId, buttonId) {
 }
 
 .toggle-button:hover {
-  background: var(--md-primary-fg-color-dark);
+  background: transparent !important;
+  color: var(--md-primary-fg-color) !important;
 }
 
 .toggle-button.active-button {
-  background: transparent !important; /* Transparenter Hintergrund für den aktiven Button */
-  color: var(--md-primary-fg-color) !important; /* Primärfarbe für den Text des aktiven Buttons */
+  background: transparent !important;
+  color: var(--md-primary-fg-color) !important;
   border: 1px solid var(--md-primary-fg-color);
 }
 
@@ -146,5 +145,4 @@ function toggleContainer(containerId, buttonId) {
   border: 1px solid var(--md-default-fg-color--lighter);
 }
 </style>
-
 

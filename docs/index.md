@@ -30,14 +30,15 @@ Hier findest du alles, was du für den Alltag mit dem Grünen Datenkonto brauchs
 
 ---
 ## Feedback und Mitwirkung
-Diese Dokumentation ist ein **lebendiges Projekt** – und du kannst mitmachen!
+Diese Dokumentation befindet sich noch im Aufbau und ist ein **lebendiges Projekt** – und du kannst mitmachen!
 Falls du ...  
 
 - **Fehler** findest,  
 - **Ergänzungen** vorschlagen möchtest oder  
-- **Fragen** hast,  
+- **Fragen** hast,   
 
-... melde dich gerne bei mir unter [deine E-Mail-Adresse] oder erstelle ein **Issue im [GitHub-Repository](#)**.
+... melde dich gerne bei mir unter gdkmanual[at]email[dot]de. 
+<!-- oder erstelle ein **Issue im [GitHub-Repository](#)**. -->
 
 ---
 **Viel Erfolg beim Arbeiten mit dem Grünen Datenkonto!** 🌱

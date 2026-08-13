@@ -27,7 +27,7 @@
 
 <div id="objekt-container" class="toggle-container" style="display: none;">
   <div style="margin: 16px 0; text-align: center;"><img src="../../../assets/images/object_data-input.png"></div>
-  <p>Alle gelb hinterlegten Felder sind Pflichtfelder und müssen ausgefüllt werden. Alle anderen Felder sind optional. Sie können für die weitere Arbeit zunächst leer bleiben, nachträglich eingetragen oder geändert werden.</p> 
+  <p>Alle gelb hinterlegten Felder sind Pflichtfelder und müssen ausgefüllt werden, die Daten in den anderen Felder kannst du später ergänzen. </p> 
   <p>Bist du mit den Eingaben fertig, klicke auf <strong>[Speichern]</strong>. <br><i>Das Objekt erscheint in der Liste auf dieser Seite.</i></p>
   <hr>
   <h3>{{ struct_head_parameters }}</h3>
@@ -151,44 +151,5 @@ function toggleContainer(containerId, buttonId) {
 }
 </script>
 
-<!-- CSS für die Buttons und Container
-<style>
-.toggle-button {
-  padding: 8px 16px;
-  background: var(--md-primary-fg-color);
-  color: white;
-  border: 1px solid var(--md-primary-fg-color);
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background 0.2s, color 0.2s;
-}
 
-.toggle-button:hover {
-  background: transparent !important;
-  color: var(--md-primary-fg-color) !important;
-  border: 1px solid var(--md-primary-fg-color);
-}
 
-.toggle-button.active-button {
-  background: transparent !important;
-  color: var(--md-primary-fg-color) !important;
-  border: 1px solid var(--md-primary-fg-color);
-}
-
-.toggle-container {
-  margin-top: 16px;
-  padding: 0;
-  background: transparent;
-  border: none;
-  color: var(--md-default-fg-color-on);
-}
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-style:solid;border-width:0px;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;
-  padding:10px 5px;word-break:normal;}
-.tg th{border-style:solid;border-width:0px;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-u9tq{border-color:#009485;text-align:left;vertical-align:top}
-.tg .tg-b2xu{background-color:#009485;border-color:#009485;color:#ffffff;font-weight:bold;text-align:left;vertical-align:top}
-</style>
--->

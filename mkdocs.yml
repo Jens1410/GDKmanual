@@ -1,10 +1,11 @@
 site_name: Das Grüne Datenkonto
 site_description: Dokumentation zur Bedienung des Grünen Datenkontos
 site_author: Jens Ackermann
-docs_dir: DOCS
+docs_dir: docs
 
 theme:
   name: material
+  custom_dir: overrides
   logo: assets/images/logo2.svg
   favicon: assets/images/favicon.svg
   language: de
@@ -67,8 +68,31 @@ plugins:
         - variables.yml
 
 
+#extra:
+#  footer: |
+#    <div style="text-align:center; padding: 1rem 0;">
+#      © 2026 Das Grüne Datenkonto – Dokumentation
+#    </div>        
+
+#extra:
+#  footer: |
+#    <div class="md-footer-meta">
+#      <p>© 2026 Jens Ackermann</p>
+#    </div>
+#    <div class="md-footer-links">
+#      <a href="/impressum/" class="footer-link">
+#        <i class="fa fa-file-alt"></i> Impressum
+#      </a>
+#      <a href="mailto:gdkmanual[at]email[dot]de" class="footer-link">
+#        <i class="fa fa-envelope"></i> Kontakt
+#      </a>
+#    </div>
+
 extra_css:
   - styles/custom.css
+
+#extra_javascript:
+#  - scripts.js 
 
 nav:
   - Startseite: index.md
@@ -77,11 +101,9 @@ nav:
       - Zugang und Anmeldung: handlungen/anmeldung.md
       - Strukturen abbilden: 
           - Einführung: handlungen/structure/index.md
-#          - Strukturerfassung: handlungen/structure/strukturerfassung.md
-          - Objekt: handlungen/structure/_building.md
-          - Lieferstelle: handlungen/structure/_building-devpoint.md          
-          - Zähler: handlungen/structure/_building-meter.md
+          - Objekt: handlungen/structure/_object.md
+          - Lieferstelle: handlungen/structure/_deliverypoint.md          
+          - Zähler: handlungen/structure/_meter.md
       - Daten erfassen: handlungen/collect_data/index.md
       - Auswertungen: handlungen/evaluation/index.md
-
   - Benutzeroberfläche: menuestruktur/index.md

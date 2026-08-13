@@ -20,6 +20,7 @@ haushaltsbedarf: "Haushaltsbedarf"
 # steps_level1
 page_open: "Seite öffnen"
 function_call: "Funktion aufrufen"
+object_shares_definition: "Objektanteile definieren"
 data_input: "Daten eingeben"
 data_edit: "Daten bearbeiten"
 optional: "Optional: "
@@ -27,7 +28,7 @@ image_add: "Bild hinzufügen"
 
 # structureTerms
 term_object: "Objekt"
-term_devpoint: "Lieferstelle"
+term_deliverypoint: "Lieferstelle"
 term_meter: "Zähler"
 term_submeter: "Unterzähler"
 
@@ -35,13 +36,16 @@ term_submeter: "Unterzähler"
 def_object: "Einheit, in welcher ein Ressourcenverbrauch entsteht."
 def_object_tech: "Jedes Gebäude mit Ressourcenverbrauch (z. B. Kirche, Gemeindehaus, Kindergarten)"
 def_object_org: "Struktureinheit in der Organisation, welche Ressourcen verbraucht (z. B. Kirchgemeinde, Verwaltung, Fuhrpark)"
+def_deliverypoint: "Übergabepunkt für eine Ressource an den Verbraucher."
+def_deliverypoint_tech: "Hausanschlüsse für Strom, Wasser, Gas oder der Tankstutzen für Heizöl"
+def_deliverypoint_org: "Fahrzeuge für Dienstfahrten, der gemeindeeigene Kopierer oder die Druckerei, welche den Gemeindebrief druckt"
 
 #menu items
 men_head_structure: "Strukturdaten"
 men_item_contact: "Kontakte, Funktionen"
 men_item_structure: "Strukturen/Gebäude"
 men_item_objectprofiles: "Gebäude-/Objekt-Profile"
-men_item_devpoints: "Lieferstellen"
+men_item_deliverypoints: "Lieferstellen"
 men_item_objectclimateprofile: "Klimasteckbrief"
 men-item_milestones: "Meilensteine"
 
@@ -76,6 +80,8 @@ result_dialog_appears: "Es erscheint der Dialog: "
 
 #function snippets
 new_object: "neues Objekt"
+new_deliverypoint: "neue Lieferstelle"
+new_assignment: "neue Zuordnung"
 
 #dialog header snippets
 dialog_header_editdata: "Daten editieren"
@@ -106,3 +112,18 @@ object_built_definition: "Jahr der Ersterrichtung des Objekts (Baujahr)"
 object_area_definition: "Größe der für den Verbrauch maßgeblichen Fläche (gesamte beheizte Fläche im Gebäude)"
 object_historic_definition: "Steht das betrachtete Objekt unter Denkmalschutz? Die Bewertung hat Einfluss auf die Frage, ob z. B bestimmte Maßnahmen möglich sind."
 object_annotation_definition: "Raum für Anmerkungen"
+
+# dialog deliverypoint data
+deliverypoint_name: "Lieferstelle"
+deliverypoint_marketlocation: "Marktlokation - Ausschließlich relevant für Strom- und Gaslieferstellen"
+deliverypoint_adress: "Adresse"
+deliverypoint_resource: "Ressource"
+
+deliverypoint_name_definition: "Eindeutige für dich erkennbare Bezeichnung der Lieferstelle"
+deliverypoint_marketlocation_definition: "Eindeutige, bundesweite Kennung für Marktlokationen im deutschen Strom- und Gasmarkt. Sie dient der Identifikation von physischen oder virtuellen Punkten, an denen Energie gemessen, bilanziell erfasst oder gehandelt wird. Du findest die MaLo-ID in der Regel auf deiner Strom- oder Gasrechnung."
+deliverypoint_adress_definition: "Position der Lieferstelle als postalische Adresse"
+deliverypoint_resource_definition: "Auswahl über die materielle Ressource, welche an der Lieferstelle übergeben wird. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf)"
+
+#dialog deliverypoint assignment
+deliverypoint_assignment_share: "Anteil"
+deliverypoint_assignment_object: "Objektzuordnung"
