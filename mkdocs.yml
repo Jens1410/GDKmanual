@@ -67,27 +67,6 @@ plugins:
       include_yaml:
         - variables.yml
 
-
-#extra:
-#  footer: |
-#    <div style="text-align:center; padding: 1rem 0;">
-#      © 2026 Das Grüne Datenkonto – Dokumentation
-#    </div>        
-
-#extra:
-#  footer: |
-#    <div class="md-footer-meta">
-#      <p>© 2026 Jens Ackermann</p>
-#    </div>
-#    <div class="md-footer-links">
-#      <a href="/impressum/" class="footer-link">
-#        <i class="fa fa-file-alt"></i> Impressum
-#      </a>
-#      <a href="mailto:gdkmanual[at]email[dot]de" class="footer-link">
-#        <i class="fa fa-envelope"></i> Kontakt
-#      </a>
-#    </div>
-
 extra_css:
   - styles/custom.css
 
