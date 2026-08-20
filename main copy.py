@@ -1,5 +1,4 @@
 import pathlib
-from jinja2 import Environment, BaseLoader
 
 def define_env(env):
 
@@ -16,20 +15,9 @@ def define_env(env):
 
     env.filters["farbe"] = farbe
 
-    # Eigene Jinja-Engine erzeugen (wichtig!)
-    jinja = Environment(loader=BaseLoader())
-
-    # Makro zum Einbinden UND Rendern externer Dateien (HTML, Markdown, Text)
+    # Makro zum Einbinden externer Dateien (HTML, Markdown, Text)
     @env.macro
     def include_file(path):
         # Pfad relativ zum docs-Verzeichnis
         full_path = pathlib.Path(env.project_dir) / env.conf['docs_dir'] / path
-
-        # Dateiinhalt laden
-        raw = full_path.read_text(encoding="utf-8")
-
-        # Snippet als Template interpretieren
-        template = jinja.from_string(raw)
-
-        # Snippet rendern: Variablen + Filter verfügbar machen
-        return template.render(**env.variables)
+        return full_path.read_text(encoding="utf-8")

@@ -1,34 +1,34 @@
 
 
-!!! tip "{{ term_meter }}: {{ def_meter }}"
+!!! tip "{{ term_submeter }}: {{ def_submeter }}"
 
-    **Zähler in der technischen Infrastruktur**  
-    {{ def_meter_tech }}  
+    **Unterzähler in der technischen Infrastruktur**  
+    {{ def_submeter_tech }}  
 
-    **Zähler in der organisatorischen Struktur**  
-    {{ def_meter_org }}  
+    **Unterzähler in der organisatorischen Struktur**  
+    {{ def_submeter_org }}  
 
 <!-- Buttons für die 4 Optionen -->
 <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
   <button onclick="toggleContainer('container-1', 'button-1')" class="toggle-button" id="button-1">1. {{ function_call }}</button>
   <button onclick="toggleContainer('container-2', 'button-2')" class="toggle-button" id="button-2">2. {{ data_input }}</button>
-  <button onclick="toggleContainer('container-3', 'button-3')" class="toggle-button" id="button-3">{{ optional }}{{ data_edit }}</button>
-  <!-- <button onclick="toggleContainer('container-4', 'button-4')" class="toggle-button" id="button-4">{{ optional }}{{ data_edit }}</button> -->
+  <button onclick="toggleContainer('container-3', 'button-3')" class="toggle-button" id="button-3">3. {{ object_shares_definition }}</button>
+  <button onclick="toggleContainer('container-4', 'button-4')" class="toggle-button" id="button-4">{{ optional }}{{ data_edit }}</button>
 </div>
 
 <!-- Container für die Inhalte (nur der erste ist sichtbar) -->
 <div id="container-1" class="toggle-container" style="display: none;">
-    <div style="margin: 16px 0; text-align: center;"><img src="../../../assets/images/meter_function_call.png"></div>
+    <div style="margin: 16px 0; text-align: center;"><img src="../../../assets/images/submeter_function_call.png"></div>
     <ol>
       <li>{{ action_openpage }}<strong>{{ men_item_meters }}</strong></li>
       <li>Wähle den Verbrauchssektor. <br>
       Für elektrische Heizungsanlagen mit eigener Zähleinrichtung wähle die Ressource <strong>{{ waerme }}</strong>. </li>
-      <li>{{action_callfunction}}<strong>{{new_meter}}</strong> | <i>{{result_dialog_appears}}<strong>{{dialog_header_editdata}}</strong></i></li>
+      <li>{{action_callfunction}}<strong>{{new_submeter}}</strong> | <i>{{result_dialog_appears}}<strong>{{dialog_header_editdata}}</strong></i></li>
     </ol>      
 </div>
 
 <div id="container-2" class="toggle-container" style="display: none;">
-  <div style="margin: 16px 0; text-align: center;"><img src="../../../assets/images/meter_data-input.png"></div>
+  <div style="margin: 16px 0; text-align: center;"><img src="../../../assets/images/submeter_data-input.png"></div>
     <p>Alle gelb hinterlegten Felder sind Pflichtfelder und müssen ausgefüllt werden, die Daten in den anderen Felder kannst du später ergänzen. </p> 
     <p>Bist du mit den Eingaben fertig, klicke auf <strong>[Speichern]</strong>. <br><i>Der neue Zähler erscheint in der Liste auf dieser Seite.</i></p>
     <hr>
@@ -64,14 +64,10 @@
     <p>{{ meter_activitystatus_usage }}</p>
   </details>
   <details>
-    <summary>{{ meter_location }}</summary>
-    <p>{{ meter_location_definition }}</p>      
+    <summary>{{ submeter_meter_assignment }}</summary>
+    <p>{{ submeter_meter_assignment_definition }}</p>      
   </details>
-  <details>
-    <summary>{{ meter_deliverypoint_assignment }}</summary>
-    <p>{{ meter_deliverypoint_assignment_definition }}</p>      
-  </details>
-  <details>
+    <details>
     <summary>{{ meter_recordingmethod }}</summary>
     <p>{{ meter_recordingmethod_definition }}</p>  
     {{ include_file("snippets/meter_recordingmethod_types_table.md") }}            
@@ -81,11 +77,7 @@
     <p>{{ meter_resource_definition }}</p>
     {{ include_file("snippets/resources_strom.md") }}        
   </details>
-  <details>
-    <summary>{{ meter_emission }}</summary>
-    <p>{{ meter_emission_definition }}</p>      
-  </details>
-  <details>
+   <details>
     <summary>{{ meter_unit }}</summary>
     <p>{{ meter_unit_definition }}</p>      
     {{ include_file("snippets/units_strom.md") }}        
@@ -109,12 +101,8 @@
     <p>{{ meter_activitystatus_usage }}</p>
   </details>
   <details>
-    <summary>{{ meter_location }}</summary>
-    <p>{{ meter_location_definition }}</p>      
-  </details>
-  <details>
-    <summary>{{ meter_deliverypoint_assignment }}</summary>
-    <p>{{ meter_deliverypoint_assignment_definition }}</p>      
+    <summary>{{ submeter_meter_assignment }}</summary>
+    <p>{{ submeter_meter_assignment_definition }}</p>      
   </details>
   <details>
     <summary>{{ meter_recordingmethod }}</summary>
@@ -126,11 +114,7 @@
     <p>{{ meter_resource_definition }}</p>
     {{ include_file("snippets/resources_waerme.md") }}         
   </details>
-  <details>
-    <summary>{{ meter_emission }}</summary>
-    <p>{{ meter_emission_definition }}</p>      
-  </details>
-  <details>
+   <details>
     <summary>{{ meter_unit }}</summary>
     <p>{{ meter_unit_definition }}</p>  
     {{ include_file("snippets/units_waerme.md") }}             
@@ -154,12 +138,8 @@
     <p>{{ meter_activitystatus_usage }}</p>
   </details>
   <details>
-    <summary>{{ meter_location }}</summary>
-    <p>{{ meter_location_definition }}</p>      
-  </details>
-  <details>
-    <summary>{{ meter_deliverypoint_assignment }}</summary>
-    <p>{{ meter_deliverypoint_assignment_definition }}</p>      
+    <summary>{{ submeter_meter_assignment }}</summary>
+    <p>{{ submeter_meter_assignment_definition }}</p>      
   </details>
   <details>
     <summary>{{ meter_recordingmethod }}</summary>
@@ -170,10 +150,6 @@
     <summary>{{ meter_resource }}</summary>
     <p>{{ meter_resource_definition }}</p>
     {{ include_file("snippets/resources_wasser.md") }}          
-  </details>
-  <details>
-    <summary>{{ meter_emission }}</summary>
-    <p>{{ meter_emission_definition }}</p>      
   </details>
   <!-- <details>
     <summary>{{ meter_unit }}</summary>
@@ -198,12 +174,8 @@
     <p>{{ meter_activitystatus_usage }}</p>
   </details>
   <details>
-    <summary>{{ meter_location }}</summary>
-    <p>{{ meter_location_definition }}</p>      
-  </details>
-  <details>
-    <summary>{{ meter_deliverypoint_assignment }}</summary>
-    <p>{{ meter_deliverypoint_assignment_definition }}</p>      
+    <summary>{{ submeter_meter_assignment }}</summary>
+    <p>{{ submeter_meter_assignment_definition }}</p>      
   </details>
   <details>
     <summary>{{ meter_recordingmethod }}</summary>
@@ -214,10 +186,6 @@
     <summary>{{ meter_resource }}</summary>
     <p>{{ meter_resource_definition }}</p>      
   </details> -->
-  <details>
-    <summary>{{ meter_emission }}</summary>
-    <p>{{ meter_emission_definition }}</p>      
-  </details>
   <details>
     <summary>{{ meter_unit }}</summary>
     <p>{{ meter_unit_definition }}</p>
@@ -242,12 +210,8 @@
     <p>{{ meter_activitystatus_usage }}</p>
   </details>
   <details>
-    <summary>{{ meter_location }}</summary>
-    <p>{{ meter_location_definition }}</p>      
-  </details>
-  <details>
-    <summary>{{ meter_deliverypoint_assignment }}</summary>
-    <p>{{ meter_deliverypoint_assignment_definition }}</p>      
+    <summary>{{ submeter_meter_assignment }}</summary>
+    <p>{{ submeter_meter_assignment_definition }}</p>      
   </details>
   <details>
     <summary>{{ meter_recordingmethod }}</summary>
@@ -257,10 +221,6 @@
   <details>
     <summary>{{ meter_resource }}</summary>
     <p>{{ meter_resource_definition }}</p>      
-  </details>
-  <details>
-    <summary>{{ meter_emission }}</summary>
-    <p>{{ meter_emission_definition }}</p>      
   </details>
   <details>
     <summary>{{ meter_unit }}</summary>
@@ -286,12 +246,8 @@
     <p>{{ meter_activitystatus_usage }}</p>
   </details>
   <details>
-    <summary>{{ meter_location }}</summary>
-    <p>{{ meter_location_definition }}</p>      
-  </details>
-  <details>
-    <summary>{{ meter_deliverypoint_assignment }}</summary>
-    <p>{{ meter_deliverypoint_assignment_definition }}</p>      
+    <summary>{{ submeter_meter_assignment }}</summary>
+    <p>{{ submeter_meter_assignment_definition }}</p>      
   </details>
   <details>
     <summary>{{ meter_recordingmethod }}</summary>
@@ -302,10 +258,6 @@
     <summary>{{ meter_resource }}</summary>
     <p>{{ meter_resource_definition }}</p>
     {{ include_file("snippets/resources_wasser.md") }}       
-  </details>
-  <details>
-    <summary>{{ meter_emission }}</summary>
-    <p>{{ meter_emission_definition }}</p>      
   </details>
   <details>
     <summary>{{ meter_unit }}</summary>
@@ -331,12 +283,8 @@
     <p>{{ meter_activitystatus_usage }}</p>
   </details>
   <details>
-    <summary>{{ meter_location }}</summary>
-    <p>{{ meter_location_definition }}</p>      
-  </details>
-  <details>
-    <summary>{{ meter_deliverypoint_assignment }}</summary>
-    <p>{{ meter_deliverypoint_assignment_definition }}</p>      
+    <summary>{{ submeter_meter_assignment }}</summary>
+    <p>{{ submeter_meter_assignment_definition }}</p>      
   </details>
   <details>
     <summary>{{ meter_recordingmethod }}</summary>
@@ -347,10 +295,6 @@
     <summary>{{ meter_resource }}</summary>
     <p>{{ meter_resource_definition }}</p> 
     {{ include_file("snippets/resources_wasser.md") }}     
-  </details>
-  <details>
-    <summary>{{ meter_emission }}</summary>
-    <p>{{ meter_emission_definition }}</p>      
   </details>
   <details>
     <summary>{{ meter_unit }}</summary>
@@ -376,12 +320,8 @@
     <p>{{ meter_activitystatus_usage }}</p>
   </details>
   <details>
-    <summary>{{ meter_location }}</summary>
-    <p>{{ meter_location_definition }}</p>      
-  </details>
-  <details>
-    <summary>{{ meter_deliverypoint_assignment }}</summary>
-    <p>{{ meter_deliverypoint_assignment_definition }}</p>      
+    <summary>{{ submeter_meter_assignment }}</summary>
+    <p>{{ submeter_meter_assignment_definition }}</p>      
   </details>
   <details>
     <summary>{{ meter_recordingmethod }}</summary>
@@ -392,10 +332,6 @@
     <summary>{{ meter_resource }}</summary>
     <p>{{ meter_resource_definition }}</p> 
     {{ include_file("snippets/resources_abfall.md") }}      
-  </details>
-  <details>
-    <summary>{{ meter_emission }}</summary>
-    <p>{{ meter_emission_definition }}</p>      
   </details>
   <details>
     <summary>{{ meter_unit }}</summary>
@@ -421,12 +357,8 @@
     <p>{{ meter_activitystatus_usage }}</p>
   </details>
   <details>
-    <summary>{{ meter_location }}</summary>
-    <p>{{ meter_location_definition }}</p>      
-  </details>
-  <details>
-    <summary>{{ meter_deliverypoint_assignment }}</summary>
-    <p>{{ meter_deliverypoint_assignment_definition }}</p>      
+    <summary>{{ submeter_meter_assignment }}</summary>
+    <p>{{ submeter_meter_assignment_definition }}</p>      
   </details>
   <details>
     <summary>{{ meter_recordingmethod }}</summary>
@@ -464,30 +396,18 @@
     <p>{{ meter_activitystatus_usage }}</p>
   </details>
   <details>
-    <summary>{{ meter_location }}</summary>
-    <p>{{ meter_location_definition }}</p>      
-  </details>
-  <details>
-    <summary>{{ meter_deliverypoint_assignment }}</summary>
-    <p>{{ meter_deliverypoint_assignment_definition }}</p>      
+    <summary>{{ submeter_meter_assignment }}</summary>
+    <p>{{ submeter_meter_assignment_definition }}</p>      
   </details>
   <details>
     <summary>{{ meter_recordingmethod }}</summary>
     <p>{{ meter_recordingmethod_definition }}</p>          
     {{ include_file("snippets/meter_recordingmethod_types_table.md") }}
   </details>
-    <details>
-    <summary>{{ meter_location }}</summary>
-    <p>{{ meter_location_definition }}</p>      
-  </details>
   <details>
     <summary>{{ meter_resource }}</summary>
     <p>{{ meter_resource_definition }}</p> 
     {{ include_file("snippets/resources_flaechen.md") }}           
-  </details>
-  <details>
-    <summary>{{ meter_emission }}</summary>
-    <p>{{ meter_emission_definition }}</p>      
   </details>
   <!--<details>
     <summary>{{ meter_unit }}</summary>
@@ -512,12 +432,8 @@
     <p>{{ meter_activitystatus_usage }}</p>
   </details>
   <details>
-    <summary>{{ meter_location }}</summary>
-    <p>{{ meter_location_definition }}</p>      
-  </details>
-  <details>
-    <summary>{{ meter_deliverypoint_assignment }}</summary>
-    <p>{{ meter_deliverypoint_assignment_definition }}</p>      
+    <summary>{{ submeter_meter_assignment }}</summary>
+    <p>{{ submeter_meter_assignment_definition }}</p>      
   </details>
   <details>
     <summary>{{ meter_recordingmethod }}</summary>
@@ -528,10 +444,6 @@
     <summary>{{ meter_resource }}</summary>
     <p>{{ meter_resource_definition }}</p>
     {{ include_file("snippets/resources_lebensmittel.md") }}         
-  </details>
-  <details>
-    <summary>{{ meter_emission }}</summary>
-    <p>{{ meter_emission_definition }}</p>      
   </details>
   <details>
     <summary>{{ meter_unit }}</summary>
@@ -557,12 +469,8 @@
     <p>{{ meter_activitystatus_usage }}</p>
   </details>
   <details>
-    <summary>{{ meter_location }}</summary>
-    <p>{{ meter_location_definition }}</p>      
-  </details>
-  <details>
-    <summary>{{ meter_deliverypoint_assignment }}</summary>
-    <p>{{ meter_deliverypoint_assignment_definition }}</p>      
+    <summary>{{ submeter_meter_assignment }}</summary>
+    <p>{{ submeter_meter_assignment_definition }}</p>      
   </details>
   <details>
     <summary>{{ meter_recordingmethod }}</summary>
@@ -573,10 +481,6 @@
     <summary>{{ meter_resource }}</summary>
     <p>{{ meter_resource_definition }}</p> 
     {{ include_file("snippets/resources_lebensmittel.md") }}   
-  </details>
-  <details>
-    <summary>{{ meter_emission }}</summary>
-    <p>{{ meter_emission_definition }}</p>      
   </details>
   <details>
     <summary>{{ meter_unit }}</summary>
@@ -602,12 +506,8 @@
     <p>{{ meter_activitystatus_usage }}</p>
   </details>
   <details>
-    <summary>{{ meter_location }}</summary>
-    <p>{{ meter_location_definition }}</p>      
-  </details>
-  <details>
-    <summary>{{ meter_deliverypoint_assignment }}</summary>
-    <p>{{ meter_deliverypoint_assignment_definition }}</p>      
+    <summary>{{ submeter_meter_assignment }}</summary>
+    <p>{{ submeter_meter_assignment_definition }}</p>      
   </details>
   <details>
     <summary>{{ meter_recordingmethod }}</summary>
@@ -617,10 +517,6 @@
   <details>
     <summary>{{ meter_resource }}</summary>
     <p>{{ meter_resource_definition }}</p>      
-  </details>
-  <details>
-    <summary>{{ meter_emission }}</summary>
-    <p>{{ meter_emission_definition }}</p>      
   </details>
   <!-- <details>
     <summary>{{ meter_unit }}</summary>
@@ -635,24 +531,31 @@
 
 
 <div id="container-3" class="toggle-container" style="display: none;">
-  <div style="margin: 16px 0; text-align: center;"><img src="../../../assets/images/meter_data-edit.png"></div>
-  <p>Mit diesen Möglichkeiten kannst du den gesamten Komplex aus Lieferstelle und Zähler nachträglich bearbeiten:</p>
+  <div style="margin: 16px 0; text-align: center;"><img src="../../../assets/images/submeter_assign_object.png"></div>
+  <p>Nun teilst du dem Unterzähler mit, für welche Objekte der Verbrauch erfasst wird und wie hoch der Anteil des jeweiligen Objekts am gemessenen Verbrauch.  
+  Der Unterzähler kann für mehrere Objekte zuständig sein. Jedem Unterzähler muss mindestens ein Objekt zugeordnet sein (ansonsten wäre der Unterzähler sinnlos). </p>
+  <p>So ordnest du dem Unterzähler ein Objekt zu:</p>
   <ol>
-    <li>Benennung und Daten der Lieferstelle ändern.</li>
-    <li>Benennung und Daten des Zähler sändern.</li>
-    <li>Die Objektzuordnung der Lieferstelle ändern (z. B. Wert des Zuordnungsanteils), ein anderes Objekt zuordnen oder die Zuordnung löschen.</li>
-    <li>Der Lieferstelle ein weiteres Objekt zuordnen.</li>
+    <li>Im Datensatz des Unterzählers: Klicke auf: <img src="../../../assets/images/symbol_edit.png"> <strong>neue Zuordnung</strong>. <br><i>{{result_dialog_appears}}<strong>{{dialog_header_editdata}}</strong></i></li>
+    <li>Wähle das zu versorgende Objekt: <strong>{{ deliverypoint_assignment_object}}.</strong><br><i>Die Auswahl zeigt alle deine zuvor definierten Objekte. Durch Mausklick ordnest du das gewählte Objekt dem Unterzähler zu.</i></li>
+    <li> Definiere den Anteil der Ressource den das Objekt über den Unterzähler bezieht. Gib den Wert als Faktor an (0 ... 1). <br><strong>An dieser Stelle berücksichtigst du den Anteil fremdgenutzter (vermieteter Gebäudeteile).</strong></li> 
+    <li>Klicke auf <strong>[Speichern]</strong>. <br><i>Das gewählte Objekt ist dem Unterzähler zugeordnet.</i></li>
+    <li>Misst der Unterzähler den Verbrauch für weitere Objekte, wiederhole die Schritte 1 bis 4. Die Summe der Zuordnungsanteile darf nicht größer als 1 sein.</li>
   </ol>     
 </div>
 
 <div id="container-4" class="toggle-container" style="display: none;">
-  <div style="margin: 16px 0; text-align: center;"><img src="../../../assets/images/deliverypoint_edit.png"></div>
-  <p>Mit diesen Möglichkeiten kannst du die Lieferstelle nachträglich bearbeiten:</p>
+  <div style="margin: 16px 0; text-align: center;"><img src="../../../assets/images/submeter_data-edit.png"></div>
+  <p>Mit diesen Möglichkeiten kannst du den gesamten Komplex aus Lieferstelle/Zähler/Unterzähler nachträglich bearbeiten:</p>
   <ol>
     <li>Benennung und Daten der Lieferstelle ändern.</li>
-    <li>Die Zuordnung zum Objekt ändern (z. B. Wert des Zuordnungsanteils), ein anderes Objekt zuordnen oder die Zuordnung löschen.</li>
+    <li>Die Objektzuordnung der Lieferstelle ändern (z. B. Wert des Zuordnungsanteils), ein anderes Objekt zuordnen oder die Zuordnung löschen.</li>
     <li>Der Lieferstelle ein weiteres Objekt zuordnen.</li>
-  </ol>
+    <li>Benennung und Daten des übergeordneten Zählers ändern.</li>
+    <li>Benennung und Daten des Unterzählers ändern.</li>
+    <li>Die des Objektzuordnung des Unterzählers ändern (z. B. Wert des Zuordnungsanteils), ein anderes Objekt zuordnen oder die Zuordnung löschen.</li>
+    <li>Dem Unterzähler ein weiteres Objekt zuordnen.</li>
+  </ol>     
 </div>
 
 

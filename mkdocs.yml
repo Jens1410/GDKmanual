@@ -75,6 +75,7 @@ extra_css:
 
 nav:
   - Startseite: index.md
+  - Verbrauchssektoren: consumption_sectors/consumption_sectors.md
   - Handlungen: 
       - Vorbereitung: handlungen/vorbereitung.md
       - Zugang und Anmeldung: handlungen/anmeldung.md
@@ -83,6 +84,8 @@ nav:
           - Objekt: handlungen/structure/_object.md
           - Lieferstelle: handlungen/structure/_deliverypoint.md          
           - Zähler: handlungen/structure/_meter.md
+          - Unterzähler: handlungen/structure/_submeter.md
       - Daten erfassen: handlungen/collect_data/index.md
       - Auswertungen: handlungen/evaluation/index.md
   - Benutzeroberfläche: menuestruktur/index.md
+  - Quellen: resources/index.md

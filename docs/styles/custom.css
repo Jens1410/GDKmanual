@@ -1,5 +1,6 @@
-
-
+/* ---------------------------------------------------------
+   BUTTONS
+--------------------------------------------------------- */
 .toggle-button {
   padding: 8px 16px;
   background: var(--md-primary-fg-color);
@@ -11,12 +12,7 @@
   transition: background 0.2s, color 0.2s;
 }
 
-.toggle-button:hover {
-  background: transparent !important;
-  color: var(--md-primary-fg-color) !important;
-  border: 1px solid var(--md-primary-fg-color);
-}
-
+.toggle-button:hover,
 .toggle-button.active-button {
   background: transparent !important;
   color: var(--md-primary-fg-color) !important;
@@ -31,67 +27,60 @@
   color: var(--md-default-fg-color-on);
 }
 
+/* ---------------------------------------------------------
+   TABLES
+--------------------------------------------------------- */
 .tg {
   border-collapse: collapse;
   border-spacing: 0;
   border: 1px solid #009485 !important;
-  }
-
-.tg td {
-  border-style: solid;
-  border-width: 1px;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  overflow: hidden;
-  padding: 10px 5px;
-  word-break: normal;
 }
 
+.tg td,
 .tg th {
   border-style: solid;
   border-width: 1px;
   font-family: Arial, sans-serif;
   font-size: 14px;
-  font-weight: normal;
   overflow: hidden;
   padding: 10px 5px;
   word-break: normal;
 }
+
 .tg .tg-u9tq {
   border-color: #009485;
   text-align: left;
-  vertical-align: top
+  vertical-align: top;
 }
+
 .tg .tg-b2xu {
   background-color: #009485;
   border-color: #ffffff;
   color: #ffffff;
   font-weight: bold;
   text-align: left;
-  vertical-align: top
+  vertical-align: top;
+}
+
+/* ---------------------------------------------------------
+   DETAILS (Light Mode)
+--------------------------------------------------------- */
+
+.md-typeset details > summary::before {
+  background-color: #00b3b3 !important;  /* Icon-Farbe im Light-Mode */
 }
 
 details {
   border: 1px solid #009485 !important;
+  
   border-radius: 6px;
   margin: 16px 0;
   background-color: #ffffff !important;
   padding: 0;
 }
 
-/* Header / Summary */
-summary {
-  background-color: #E5F8F6 !important;
-  cursor: pointer;
-  font-weight: bold;
-  padding: 10px 14px;
-  border-radius: 6px 6px 0 0;
-  list-style: none;
-}
-
-/* Entfernt den Standard-Dreieck-Pfeil */
-summary::-webkit-details-marker {
-  color: #009485 !important;
+details > summary {
+  background-color: #E5F8F6 !important;  
 }
 
 /* Inhalt */
@@ -100,17 +89,50 @@ details div {
   margin-top: 8px;
 }
 
-/* TIP-Admonition im Dark-Mode lesbar machen */
-[data-md-color-scheme="slate"] .md-typeset .admonition.tip,
-[data-md-color-scheme="slate"] .md-typeset details.tip {
-  background-color: #003c3c !important;   /* dunkles Petrol */
-  border-color: #00b3b3 !important;       /* kräftiges Türkis */
-  color: #e0f7f7 !important;              /* sehr helles Türkis */
+/* ---------------------------------------------------------
+   DARK MODE: DETAILS
+--------------------------------------------------------- */
+[data-md-color-scheme="slate"] .md-typeset details {
+  background-color: #003c3c !important;
+  border: 1px solid #00b3b3 !important;
+  border-radius: 6px !important;
+  padding: 0.5rem 0.75rem !important;
+  color: #e0f7f7 !important;
 }
 
-/* Header (Titel) der TIP-Admonition */
-[data-md-color-scheme="slate"] .md-typeset .admonition.tip > .admonition-title,
-[data-md-color-scheme="slate"] .md-typeset details.tip > summary {
-  background-color: #005f5f !important;   /* etwas helleres Petrol */
+[data-md-color-scheme="slate"] .md-typeset details > summary {
+  background-color: #005f5f !important;
   color: #e0f7f7 !important;
+  padding: 0.4rem 0.6rem !important;
+  border-radius: 6px !important;
+  cursor: pointer;
+}
+
+/* Inhalt */
+[data-md-color-scheme="slate"] .md-typeset details > *:not(summary) {
+  color: #e0f7f7 !important;
+}
+
+/* ---------------------------------------------------------
+   DARK MODE: TIP ADMONITIONS
+--------------------------------------------------------- */
+[data-md-color-scheme="slate"] .md-typeset .admonition.tip {
+  background-color: #003c3c !important;
+  border-color: #00b3b3 !important;
+  color: #e0f7f7 !important;
+}
+
+[data-md-color-scheme="slate"] .md-typeset .admonition.tip > .admonition-title {
+  background-color: #005f5f !important;
+  color: #e0f7f7 !important;
+}
+
+/* ---------------------------------------------------------
+   UNIVERSAL FIX: ICON + TEXT korrekt ausrichten
+--------------------------------------------------------- */
+.md-typeset details > summary,
+.md-typeset .admonition > .admonition-title {
+  display: flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
 }
