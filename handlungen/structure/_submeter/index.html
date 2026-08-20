@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../_deliverypoint/">
+        <link rel="prev" href="../_meter/">
       
       
-        <link rel="next" href="../_submeter/">
+        <link rel="next" href="../../collect_data/">
       
       
         
@@ -27,7 +27,7 @@
     
     
       
-        <title>Zähler - Das Grüne Datenkonto</title>
+        <title>Unterzähler - Das Grüne Datenkonto</title>
       
     
     
@@ -110,7 +110,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Zähler
+              Unterzähler
             
           </span>
         </div>
@@ -640,6 +640,34 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../_meter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Zähler
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -657,35 +685,6 @@
   <span class="md-ellipsis">
     
   
-    Zähler
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../_submeter/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
     Unterzähler
   
 
@@ -695,6 +694,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -858,36 +858,36 @@
 
 
 
-  <h1>Zähler</h1>
+  <h1>Unterzähler</h1>
 
 <div class="admonition tip">
-<p class="admonition-title">Zähler: Gegenstand zur quantitativen Erfassung von Verbrauch oder Erzeugung einer bestimmten Ressource</p>
-<p><strong>Zähler in der technischen Infrastruktur</strong><br />
-Zählwerke für Strom, Wasser, Gas oder die Füllstandsanzeige am Heizöl-Tank  </p>
-<p><strong>Zähler in der organisatorischen Struktur</strong><br />
-Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachweis des Kraftstoffverbrauchs  </p>
+<p class="admonition-title">Unterzähler: Einem Hauptzähler untergeordneter Zähler zur Verbrauchmessung in einem spezifischen Bereich</p>
+<p><strong>Unterzähler in der technischen Infrastruktur</strong><br />
+Stromzähler zur Verbrauchsmessung für Nebengebäude oder spezielle Anlagen  </p>
+<p><strong>Unterzähler in der organisatorischen Struktur</strong><br />
+Mehrere personengebundene Fahrtenbücher für dasselbe Fahrzeug Erfassung gefahrener Kilometer  </p>
 </div>
 <!-- Buttons für die 4 Optionen -->
 <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px;">
   <button onclick="toggleContainer('container-1', 'button-1')" class="toggle-button" id="button-1">1. Funktion aufrufen</button>
   <button onclick="toggleContainer('container-2', 'button-2')" class="toggle-button" id="button-2">2. Daten eingeben</button>
-  <button onclick="toggleContainer('container-3', 'button-3')" class="toggle-button" id="button-3">Optional: Daten bearbeiten</button>
-  <!-- <button onclick="toggleContainer('container-4', 'button-4')" class="toggle-button" id="button-4">Optional: Daten bearbeiten</button> -->
+  <button onclick="toggleContainer('container-3', 'button-3')" class="toggle-button" id="button-3">3. Objektanteile definieren</button>
+  <button onclick="toggleContainer('container-4', 'button-4')" class="toggle-button" id="button-4">Optional: Daten bearbeiten</button>
 </div>
 
 <!-- Container für die Inhalte (nur der erste ist sichtbar) -->
 <div id="container-1" class="toggle-container" style="display: none;">
-    <div style="margin: 16px 0; text-align: center;"><img src="../../../assets/images/meter_function_call.png"></div>
+    <div style="margin: 16px 0; text-align: center;"><img src="../../../assets/images/submeter_function_call.png"></div>
     <ol>
       <li>Öffne die Seite: <strong>Zähler, Zuordnungen</strong></li>
       <li>Wähle den Verbrauchssektor. <br>
       Für elektrische Heizungsanlagen mit eigener Zähleinrichtung wähle die Ressource <strong>Wärmeenergie-Verbrauch</strong>. </li>
-      <li>Klicke auf: <strong>neues Zählwerk</strong> | <i>Es erscheint der Dialog: <strong>Daten editieren</strong></i></li>
+      <li>Klicke auf: <strong>neuer Unterzähler</strong> | <i>Es erscheint der Dialog: <strong>Daten editieren</strong></i></li>
     </ol>      
 </div>
 
 <div id="container-2" class="toggle-container" style="display: none;">
-  <div style="margin: 16px 0; text-align: center;"><img src="../../../assets/images/meter_data-input.png"></div>
+  <div style="margin: 16px 0; text-align: center;"><img src="../../../assets/images/submeter_data-input.png"></div>
     <p>Alle gelb hinterlegten Felder sind Pflichtfelder und müssen ausgefüllt werden, die Daten in den anderen Felder kannst du später ergänzen. </p> 
     <p>Bist du mit den Eingaben fertig, klicke auf <strong>[Speichern]</strong>. <br><i>Der neue Zähler erscheint in der Liste auf dieser Seite.</i></p>
     <hr>
@@ -923,14 +923,10 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
     <p>Nach einem Zählerwechsel setzt du den alten Zähler auf 'inaktiv' und legst einen neuen Zähler an. Der inaktive Zähler liefert keine Daten mehr, während der neue (aktive) Zähler die aktuelle Verbrauchserfassung übernimmt und fortsetzt.</p>
   </details>
   <details>
-    <summary>Messlokation</summary>
-    <p>Eine eindeutige, bundesweite Kennung, die einen Zähler anhand von Land, Netzbetreiber, Region/Netzgebiet und Zählernummer identifiziert. Sie ist insbesondere für Strom- und Gaszähler standardisiert und wird in der Regel auf der Rechnung angegeben.</p>      
+    <summary>Unterzähler von</summary>
+    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Zählwerke. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
   </details>
-  <details>
-    <summary>Lieferstelle</summary>
-    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Lieferstellen. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
-  </details>
-  <details>
+    <details>
     <summary>Erfassung durch</summary>
     <p>Auswahl eines Kriteriums für die Verbrauchsmengenerfassung.</p>  
     <table class="tg"><thead>
@@ -997,11 +993,7 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
     </tbody>
 </table>        
   </details>
-  <details>
-    <summary>Emission</summary>
-    <p>Hier wird noch gearbeitet.</p>      
-  </details>
-  <details>
+   <details>
     <summary>Einheit</summary>
     <p>Auswahl über die gemessene Einheit des Verbrauchs.</p>      
     <table class="tg">
@@ -1100,12 +1092,8 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
     <p>Nach einem Zählerwechsel setzt du den alten Zähler auf 'inaktiv' und legst einen neuen Zähler an. Der inaktive Zähler liefert keine Daten mehr, während der neue (aktive) Zähler die aktuelle Verbrauchserfassung übernimmt und fortsetzt.</p>
   </details>
   <details>
-    <summary>Messlokation</summary>
-    <p>Eine eindeutige, bundesweite Kennung, die einen Zähler anhand von Land, Netzbetreiber, Region/Netzgebiet und Zählernummer identifiziert. Sie ist insbesondere für Strom- und Gaszähler standardisiert und wird in der Regel auf der Rechnung angegeben.</p>      
-  </details>
-  <details>
-    <summary>Lieferstelle</summary>
-    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Lieferstellen. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
+    <summary>Unterzähler von</summary>
+    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Zählwerke. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
   </details>
   <details>
     <summary>Erfassung durch</summary>
@@ -1211,11 +1199,7 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
     </tr>
   </tbody></table>          
   </details>
-  <details>
-    <summary>Emission</summary>
-    <p>Hier wird noch gearbeitet.</p>      
-  </details>
-  <details>
+   <details>
     <summary>Einheit</summary>
     <p>Auswahl über die gemessene Einheit des Verbrauchs.</p>  
     <table class="tg">
@@ -1369,12 +1353,8 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
     <p>Nach einem Zählerwechsel setzt du den alten Zähler auf 'inaktiv' und legst einen neuen Zähler an. Der inaktive Zähler liefert keine Daten mehr, während der neue (aktive) Zähler die aktuelle Verbrauchserfassung übernimmt und fortsetzt.</p>
   </details>
   <details>
-    <summary>Messlokation</summary>
-    <p>Eine eindeutige, bundesweite Kennung, die einen Zähler anhand von Land, Netzbetreiber, Region/Netzgebiet und Zählernummer identifiziert. Sie ist insbesondere für Strom- und Gaszähler standardisiert und wird in der Regel auf der Rechnung angegeben.</p>      
-  </details>
-  <details>
-    <summary>Lieferstelle</summary>
-    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Lieferstellen. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
+    <summary>Unterzähler von</summary>
+    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Zählwerke. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
   </details>
   <details>
     <summary>Erfassung durch</summary>
@@ -1431,10 +1411,6 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
   </tbody>
 </table>          
   </details>
-  <details>
-    <summary>Emission</summary>
-    <p>Hier wird noch gearbeitet.</p>      
-  </details>
   <!-- <details>
     <summary>Einheit</summary>
     <p>Auswahl über die gemessene Einheit des Verbrauchs.</p>      
@@ -1458,12 +1434,8 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
     <p>Nach einem Zählerwechsel setzt du den alten Zähler auf 'inaktiv' und legst einen neuen Zähler an. Der inaktive Zähler liefert keine Daten mehr, während der neue (aktive) Zähler die aktuelle Verbrauchserfassung übernimmt und fortsetzt.</p>
   </details>
   <details>
-    <summary>Messlokation</summary>
-    <p>Eine eindeutige, bundesweite Kennung, die einen Zähler anhand von Land, Netzbetreiber, Region/Netzgebiet und Zählernummer identifiziert. Sie ist insbesondere für Strom- und Gaszähler standardisiert und wird in der Regel auf der Rechnung angegeben.</p>      
-  </details>
-  <details>
-    <summary>Lieferstelle</summary>
-    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Lieferstellen. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
+    <summary>Unterzähler von</summary>
+    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Zählwerke. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
   </details>
   <details>
     <summary>Erfassung durch</summary>
@@ -1501,10 +1473,6 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
     <summary>Ressource</summary>
     <p>Auswahl über die materielle Ressource, deren Verbrauch durch den Zähler erfasst wird. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf)</p>      
   </details> -->
-  <details>
-    <summary>Emission</summary>
-    <p>Hier wird noch gearbeitet.</p>      
-  </details>
   <details>
     <summary>Einheit</summary>
     <p>Auswahl über die gemessene Einheit des Verbrauchs.</p>
@@ -1598,12 +1566,8 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
     <p>Nach einem Zählerwechsel setzt du den alten Zähler auf 'inaktiv' und legst einen neuen Zähler an. Der inaktive Zähler liefert keine Daten mehr, während der neue (aktive) Zähler die aktuelle Verbrauchserfassung übernimmt und fortsetzt.</p>
   </details>
   <details>
-    <summary>Messlokation</summary>
-    <p>Eine eindeutige, bundesweite Kennung, die einen Zähler anhand von Land, Netzbetreiber, Region/Netzgebiet und Zählernummer identifiziert. Sie ist insbesondere für Strom- und Gaszähler standardisiert und wird in der Regel auf der Rechnung angegeben.</p>      
-  </details>
-  <details>
-    <summary>Lieferstelle</summary>
-    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Lieferstellen. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
+    <summary>Unterzähler von</summary>
+    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Zählwerke. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
   </details>
   <details>
     <summary>Erfassung durch</summary>
@@ -1640,10 +1604,6 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
   <details>
     <summary>Ressource</summary>
     <p>Auswahl über die materielle Ressource, deren Verbrauch durch den Zähler erfasst wird. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf)</p>      
-  </details>
-  <details>
-    <summary>Emission</summary>
-    <p>Hier wird noch gearbeitet.</p>      
   </details>
   <details>
     <summary>Einheit</summary>
@@ -1749,12 +1709,8 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
     <p>Nach einem Zählerwechsel setzt du den alten Zähler auf 'inaktiv' und legst einen neuen Zähler an. Der inaktive Zähler liefert keine Daten mehr, während der neue (aktive) Zähler die aktuelle Verbrauchserfassung übernimmt und fortsetzt.</p>
   </details>
   <details>
-    <summary>Messlokation</summary>
-    <p>Eine eindeutige, bundesweite Kennung, die einen Zähler anhand von Land, Netzbetreiber, Region/Netzgebiet und Zählernummer identifiziert. Sie ist insbesondere für Strom- und Gaszähler standardisiert und wird in der Regel auf der Rechnung angegeben.</p>      
-  </details>
-  <details>
-    <summary>Lieferstelle</summary>
-    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Lieferstellen. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
+    <summary>Unterzähler von</summary>
+    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Zählwerke. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
   </details>
   <details>
     <summary>Erfassung durch</summary>
@@ -1812,10 +1768,6 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
 </table>       
   </details>
   <details>
-    <summary>Emission</summary>
-    <p>Hier wird noch gearbeitet.</p>      
-  </details>
-  <details>
     <summary>Einheit</summary>
     <p>Auswahl über die gemessene Einheit des Verbrauchs.</p>
     <table class="tg">
@@ -1864,12 +1816,8 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
     <p>Nach einem Zählerwechsel setzt du den alten Zähler auf 'inaktiv' und legst einen neuen Zähler an. Der inaktive Zähler liefert keine Daten mehr, während der neue (aktive) Zähler die aktuelle Verbrauchserfassung übernimmt und fortsetzt.</p>
   </details>
   <details>
-    <summary>Messlokation</summary>
-    <p>Eine eindeutige, bundesweite Kennung, die einen Zähler anhand von Land, Netzbetreiber, Region/Netzgebiet und Zählernummer identifiziert. Sie ist insbesondere für Strom- und Gaszähler standardisiert und wird in der Regel auf der Rechnung angegeben.</p>      
-  </details>
-  <details>
-    <summary>Lieferstelle</summary>
-    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Lieferstellen. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
+    <summary>Unterzähler von</summary>
+    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Zählwerke. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
   </details>
   <details>
     <summary>Erfassung durch</summary>
@@ -1925,10 +1873,6 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
     </tr>      
   </tbody>
 </table>     
-  </details>
-  <details>
-    <summary>Emission</summary>
-    <p>Hier wird noch gearbeitet.</p>      
   </details>
   <details>
     <summary>Einheit</summary>
@@ -2029,12 +1973,8 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
     <p>Nach einem Zählerwechsel setzt du den alten Zähler auf 'inaktiv' und legst einen neuen Zähler an. Der inaktive Zähler liefert keine Daten mehr, während der neue (aktive) Zähler die aktuelle Verbrauchserfassung übernimmt und fortsetzt.</p>
   </details>
   <details>
-    <summary>Messlokation</summary>
-    <p>Eine eindeutige, bundesweite Kennung, die einen Zähler anhand von Land, Netzbetreiber, Region/Netzgebiet und Zählernummer identifiziert. Sie ist insbesondere für Strom- und Gaszähler standardisiert und wird in der Regel auf der Rechnung angegeben.</p>      
-  </details>
-  <details>
-    <summary>Lieferstelle</summary>
-    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Lieferstellen. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
+    <summary>Unterzähler von</summary>
+    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Zählwerke. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
   </details>
   <details>
     <summary>Erfassung durch</summary>
@@ -2107,10 +2047,6 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
     </tr>
   </tbody>
 </table>       
-  </details>
-  <details>
-    <summary>Emission</summary>
-    <p>Hier wird noch gearbeitet.</p>      
   </details>
   <details>
     <summary>Einheit</summary>
@@ -2211,12 +2147,8 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
     <p>Nach einem Zählerwechsel setzt du den alten Zähler auf 'inaktiv' und legst einen neuen Zähler an. Der inaktive Zähler liefert keine Daten mehr, während der neue (aktive) Zähler die aktuelle Verbrauchserfassung übernimmt und fortsetzt.</p>
   </details>
   <details>
-    <summary>Messlokation</summary>
-    <p>Eine eindeutige, bundesweite Kennung, die einen Zähler anhand von Land, Netzbetreiber, Region/Netzgebiet und Zählernummer identifiziert. Sie ist insbesondere für Strom- und Gaszähler standardisiert und wird in der Regel auf der Rechnung angegeben.</p>      
-  </details>
-  <details>
-    <summary>Lieferstelle</summary>
-    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Lieferstellen. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
+    <summary>Unterzähler von</summary>
+    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Zählwerke. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
   </details>
   <details>
     <summary>Erfassung durch</summary>
@@ -2281,12 +2213,8 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
     <p>Nach einem Zählerwechsel setzt du den alten Zähler auf 'inaktiv' und legst einen neuen Zähler an. Der inaktive Zähler liefert keine Daten mehr, während der neue (aktive) Zähler die aktuelle Verbrauchserfassung übernimmt und fortsetzt.</p>
   </details>
   <details>
-    <summary>Messlokation</summary>
-    <p>Eine eindeutige, bundesweite Kennung, die einen Zähler anhand von Land, Netzbetreiber, Region/Netzgebiet und Zählernummer identifiziert. Sie ist insbesondere für Strom- und Gaszähler standardisiert und wird in der Regel auf der Rechnung angegeben.</p>      
-  </details>
-  <details>
-    <summary>Lieferstelle</summary>
-    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Lieferstellen. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
+    <summary>Unterzähler von</summary>
+    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Zählwerke. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
   </details>
   <details>
     <summary>Erfassung durch</summary>
@@ -2319,10 +2247,6 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
       <td class="tg-0pky">Hier wird noch gearbeitet.</td>
     </tr>
   </tbody></table>
-  </details>
-    <details>
-    <summary>Messlokation</summary>
-    <p>Eine eindeutige, bundesweite Kennung, die einen Zähler anhand von Land, Netzbetreiber, Region/Netzgebiet und Zählernummer identifiziert. Sie ist insbesondere für Strom- und Gaszähler standardisiert und wird in der Regel auf der Rechnung angegeben.</p>      
   </details>
   <details>
     <summary>Ressource</summary>
@@ -2369,10 +2293,6 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
   </tbody>
 </table>            
   </details>
-  <details>
-    <summary>Emission</summary>
-    <p>Hier wird noch gearbeitet.</p>      
-  </details>
   <!--<details>
     <summary>Einheit</summary>
     <p>Auswahl über die gemessene Einheit des Verbrauchs.</p>      
@@ -2396,12 +2316,8 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
     <p>Nach einem Zählerwechsel setzt du den alten Zähler auf 'inaktiv' und legst einen neuen Zähler an. Der inaktive Zähler liefert keine Daten mehr, während der neue (aktive) Zähler die aktuelle Verbrauchserfassung übernimmt und fortsetzt.</p>
   </details>
   <details>
-    <summary>Messlokation</summary>
-    <p>Eine eindeutige, bundesweite Kennung, die einen Zähler anhand von Land, Netzbetreiber, Region/Netzgebiet und Zählernummer identifiziert. Sie ist insbesondere für Strom- und Gaszähler standardisiert und wird in der Regel auf der Rechnung angegeben.</p>      
-  </details>
-  <details>
-    <summary>Lieferstelle</summary>
-    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Lieferstellen. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
+    <summary>Unterzähler von</summary>
+    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Zählwerke. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
   </details>
   <details>
     <summary>Erfassung durch</summary>
@@ -2551,10 +2467,6 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
 </table>          
   </details>
   <details>
-    <summary>Emission</summary>
-    <p>Hier wird noch gearbeitet.</p>      
-  </details>
-  <details>
     <summary>Einheit</summary>
     <p>Auswahl über die gemessene Einheit des Verbrauchs.</p>
     <table class="tg">
@@ -2598,12 +2510,8 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
     <p>Nach einem Zählerwechsel setzt du den alten Zähler auf 'inaktiv' und legst einen neuen Zähler an. Der inaktive Zähler liefert keine Daten mehr, während der neue (aktive) Zähler die aktuelle Verbrauchserfassung übernimmt und fortsetzt.</p>
   </details>
   <details>
-    <summary>Messlokation</summary>
-    <p>Eine eindeutige, bundesweite Kennung, die einen Zähler anhand von Land, Netzbetreiber, Region/Netzgebiet und Zählernummer identifiziert. Sie ist insbesondere für Strom- und Gaszähler standardisiert und wird in der Regel auf der Rechnung angegeben.</p>      
-  </details>
-  <details>
-    <summary>Lieferstelle</summary>
-    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Lieferstellen. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
+    <summary>Unterzähler von</summary>
+    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Zählwerke. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
   </details>
   <details>
     <summary>Erfassung durch</summary>
@@ -2753,10 +2661,6 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
 </table>    
   </details>
   <details>
-    <summary>Emission</summary>
-    <p>Hier wird noch gearbeitet.</p>      
-  </details>
-  <details>
     <summary>Einheit</summary>
     <p>Auswahl über die gemessene Einheit des Verbrauchs.</p>
     <table class="tg">
@@ -2800,12 +2704,8 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
     <p>Nach einem Zählerwechsel setzt du den alten Zähler auf 'inaktiv' und legst einen neuen Zähler an. Der inaktive Zähler liefert keine Daten mehr, während der neue (aktive) Zähler die aktuelle Verbrauchserfassung übernimmt und fortsetzt.</p>
   </details>
   <details>
-    <summary>Messlokation</summary>
-    <p>Eine eindeutige, bundesweite Kennung, die einen Zähler anhand von Land, Netzbetreiber, Region/Netzgebiet und Zählernummer identifiziert. Sie ist insbesondere für Strom- und Gaszähler standardisiert und wird in der Regel auf der Rechnung angegeben.</p>      
-  </details>
-  <details>
-    <summary>Lieferstelle</summary>
-    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Lieferstellen. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
+    <summary>Unterzähler von</summary>
+    <p>Auswahl über die für den gewählten Verbrauchssektor definierten Zählwerke. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf).</p>      
   </details>
   <details>
     <summary>Erfassung durch</summary>
@@ -2843,10 +2743,6 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
     <summary>Ressource</summary>
     <p>Auswahl über die materielle Ressource, deren Verbrauch durch den Zähler erfasst wird. Der Inhalt dieser Auswahl richtet sich nach dem zuvor gewälten Verbrauchssektor (Strom, Wärme, Wasser, Gas, Abfall, Papier, Lebensmittel, Bürobedarf, Haushaltsbedarf)</p>      
   </details>
-  <details>
-    <summary>Emission</summary>
-    <p>Hier wird noch gearbeitet.</p>      
-  </details>
   <!-- <details>
     <summary>Einheit</summary>
     <p>Auswahl über die gemessene Einheit des Verbrauchs.</p>      
@@ -2859,24 +2755,31 @@ Fahrtenbücher zur Erfassung gefahrener Kilometer oder Tankquittungen zum Nachwe
 </div>
 
 <div id="container-3" class="toggle-container" style="display: none;">
-  <div style="margin: 16px 0; text-align: center;"><img src="../../../assets/images/meter_data-edit.png"></div>
-  <p>Mit diesen Möglichkeiten kannst du den gesamten Komplex aus Lieferstelle und Zähler nachträglich bearbeiten:</p>
+  <div style="margin: 16px 0; text-align: center;"><img src="../../../assets/images/submeter_assign_object.png"></div>
+  <p>Nun teilst du dem Unterzähler mit, für welche Objekte der Verbrauch erfasst wird und wie hoch der Anteil des jeweiligen Objekts am gemessenen Verbrauch.  
+  Der Unterzähler kann für mehrere Objekte zuständig sein. Jedem Unterzähler muss mindestens ein Objekt zugeordnet sein (ansonsten wäre der Unterzähler sinnlos). </p>
+  <p>So ordnest du dem Unterzähler ein Objekt zu:</p>
   <ol>
-    <li>Benennung und Daten der Lieferstelle ändern.</li>
-    <li>Benennung und Daten des Zähler sändern.</li>
-    <li>Die Objektzuordnung der Lieferstelle ändern (z. B. Wert des Zuordnungsanteils), ein anderes Objekt zuordnen oder die Zuordnung löschen.</li>
-    <li>Der Lieferstelle ein weiteres Objekt zuordnen.</li>
+    <li>Im Datensatz des Unterzählers: Klicke auf: <img src="../../../assets/images/symbol_edit.png"> <strong>neue Zuordnung</strong>. <br><i>Es erscheint der Dialog: <strong>Daten editieren</strong></i></li>
+    <li>Wähle das zu versorgende Objekt: <strong>Objektzuordnung.</strong><br><i>Die Auswahl zeigt alle deine zuvor definierten Objekte. Durch Mausklick ordnest du das gewählte Objekt dem Unterzähler zu.</i></li>
+    <li> Definiere den Anteil der Ressource den das Objekt über den Unterzähler bezieht. Gib den Wert als Faktor an (0 ... 1). <br><strong>An dieser Stelle berücksichtigst du den Anteil fremdgenutzter (vermieteter Gebäudeteile).</strong></li> 
+    <li>Klicke auf <strong>[Speichern]</strong>. <br><i>Das gewählte Objekt ist dem Unterzähler zugeordnet.</i></li>
+    <li>Misst der Unterzähler den Verbrauch für weitere Objekte, wiederhole die Schritte 1 bis 4. Die Summe der Zuordnungsanteile darf nicht größer als 1 sein.</li>
   </ol>     
 </div>
 
 <div id="container-4" class="toggle-container" style="display: none;">
-  <div style="margin: 16px 0; text-align: center;"><img src="../../../assets/images/deliverypoint_edit.png"></div>
-  <p>Mit diesen Möglichkeiten kannst du die Lieferstelle nachträglich bearbeiten:</p>
+  <div style="margin: 16px 0; text-align: center;"><img src="../../../assets/images/submeter_data-edit.png"></div>
+  <p>Mit diesen Möglichkeiten kannst du den gesamten Komplex aus Lieferstelle/Zähler/Unterzähler nachträglich bearbeiten:</p>
   <ol>
     <li>Benennung und Daten der Lieferstelle ändern.</li>
-    <li>Die Zuordnung zum Objekt ändern (z. B. Wert des Zuordnungsanteils), ein anderes Objekt zuordnen oder die Zuordnung löschen.</li>
+    <li>Die Objektzuordnung der Lieferstelle ändern (z. B. Wert des Zuordnungsanteils), ein anderes Objekt zuordnen oder die Zuordnung löschen.</li>
     <li>Der Lieferstelle ein weiteres Objekt zuordnen.</li>
-  </ol>
+    <li>Benennung und Daten des übergeordneten Zählers ändern.</li>
+    <li>Benennung und Daten des Unterzählers ändern.</li>
+    <li>Die des Objektzuordnung des Unterzählers ändern (z. B. Wert des Zuordnungsanteils), ein anderes Objekt zuordnen oder die Zuordnung löschen.</li>
+    <li>Dem Unterzähler ein weiteres Objekt zuordnen.</li>
+  </ol>     
 </div>
 
 <script>
